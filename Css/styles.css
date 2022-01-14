@@ -14,23 +14,35 @@ body {
   background-size: cover;
   font-family: futura, sans-serif;
 }
+.home__text {
+  width: 40%;
+  margin: 8% 0 auto 10%;
+}
+.home__social {
+  
+}
 
 /* -------------- <Nav> */
 
+.logo {
+  width: 100px;
+  padding-top: 5px;
+}
 nav {
   background-color: rgba(222, 247, 255, 0.1);
-  padding: 30px;
+  padding: 20px 40px;
   font-size: 1rem;
   text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 ul {
   display: flex;
-}
-nav li {
   list-style-type: none;
+  gap: 200px;
 }
 nav a {
   color: #fff;
   text-decoration: none;
-  padding-left: 100px;
 }
