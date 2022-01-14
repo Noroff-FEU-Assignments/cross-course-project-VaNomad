@@ -3,10 +3,26 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* Home Page       
---------------- <Nav section> */
+--------------- <Body> */
+body {
+  width: 100%;
+  background: url(/Images/joshua-earle-t6QYC3Zmis0-unsplash.jpg);
+  background-size: cover;
+  font-family: futura, sans-serif;
+}
+
+/* -------------- <Nav> */
+
+nav {
+  background-color: rgba(222, 247, 255, 0.1);
+  padding: 30px;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
 ul {
   display: flex;
 }
@@ -14,11 +30,7 @@ nav li {
   list-style-type: none;
 }
 nav a {
+  color: #fff;
   text-decoration: none;
-  padding: 10px;
-}
-
-/* -------------- <Main section> */
-main img {
-  width: 100%;
+  padding-left: 100px;
 }
