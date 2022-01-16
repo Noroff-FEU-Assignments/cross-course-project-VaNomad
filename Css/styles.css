@@ -12,9 +12,9 @@ body {
   background: url(/Images/joshua-earle-t6QYC3Zmis0-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-x: right;
-  margin-right: auto;
+  background-position: bottom right;
   font-family: futura, sans-serif;
+  margin: auto;
 }
 .home__main-container {
   width: 100vw;
@@ -24,9 +24,8 @@ body {
   align-items: center;
 }
 .home__text {
-  max-width: 1200px;
-  display: block;
-  padding: 0 500px 0 200px;
+  width: 1000px;
+  padding: 0 350px 0 200px;
 }
 .social-icons {
   display: flex;
@@ -40,17 +39,14 @@ color: #d42d59;
 cursor: pointer;
 }
 .social-link {
-  padding: 55px 30px;
+  padding: 55px 30px 55px 0;
 }
-
-.div21 {
+.text-left {
   margin-right: auto;
 }
-
-.div22 {
+.social-right {
   margin-left: auto;
 }
-
 
 /* NAV -------------------------*/
 
@@ -60,6 +56,10 @@ header {
   padding: 10px 0px;
   font-size: 1rem;
   text-transform: uppercase;
+}
+.dividend {
+  display: flex;
+  justify-content: space-between;
 }
 .logo {
   max-width: 100px;
@@ -81,7 +81,6 @@ nav ul {
   gap: 80px;
   padding-left: 52vw;
   list-style-type: none;
-  margin: auto;
 }
 .hamburger-label {
   float: right;
@@ -110,7 +109,7 @@ nav a {
 #hamburger-menu:checked ~ nav {
     display: block;
 }
-/* mobile and small tablet - 767px and smaller */
+/* mobile and tablet - 1024px and smaller */
 @media(max-width: 1024px){
     .hamburger-label {
       display: flex;
@@ -126,16 +125,13 @@ nav a {
       width: 400px;
       margin: auto;
     }
-
     .social-icons {
       display: flex;
       align-items: flex-end;
     }
-
     .social-link {
       float: right;
     }
-
     .home__main-container {
       display: block;
     }
