@@ -20,7 +20,8 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  height: calc(100vh - 73px);
+  /* height: calc(100vh - 73px); */
+  height: 88.9vh;
   align-items: center;
 }
 .home__text {
@@ -46,6 +47,7 @@ cursor: pointer;
 }
 .social-right {
   margin-left: auto;
+  margin-top: 0;
 }
 
 /* NAV -------------------------*/
@@ -118,7 +120,8 @@ nav a {
       display: none;
     }
     .home__text {
-      display: block;
+      /* display: block; */
+      display: flex;
       padding: 0;
       background-position: center;
       background-size: contain;
@@ -128,6 +131,7 @@ nav a {
     .social-icons {
       display: flex;
       align-items: flex-end;
+      padding-bottom: 250px;
     }
     .social-link {
       float: right;
