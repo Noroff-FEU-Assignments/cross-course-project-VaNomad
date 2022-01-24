@@ -5,11 +5,17 @@
   box-sizing: border-box;
 }
 
+body {
+font-family: futura-pt,sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
 /* Home Page ---------------------*/
 
 body {
   width: 100%;
-  background: url(/Images/joshua-earle-t6QYC3Zmis0-unsplash.jpg);
+  background: url(/images/joshua-earle-t6QYC3Zmis0-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom right;
@@ -70,6 +76,16 @@ header {
 nav, #hamburger-menu {
   display: none;
   }
+#hamburger-menu:checked ~ nav {
+    display: block;
+}
+.hamburger-label {
+  float: right;
+  color: #FFF;
+  padding: 10px 10px;
+  font-size: 1.5em;
+  /* align-items: flex-end ; */
+}
 nav {
   width: 100%;
   padding: 10px 20px;
@@ -84,13 +100,6 @@ nav ul {
   gap: 80px;
   padding-left: 52vw;
   list-style-type: none;
-}
-.hamburger-label {
-  float: right;
-  color: #FFF;
-  padding: 10px 10px;
-  font-size: 1.5em;
-  /* align-items: flex-end ; */
 }
 nav li {
   margin: 0;
@@ -109,9 +118,6 @@ nav a {
 /* Media Queries       
 --------------------- */
 
-#hamburger-menu:checked ~ nav {
-    display: block;
-}
 /* mobile and tablet - 1024px and smaller */
 @media(max-width: 1024px){
     .hamburger-label {
