@@ -39,9 +39,7 @@ nav, #hamburger-menu {
 }
 nav {
   width: 100%;
-  padding: 10px 20px;
-  font-size: 1rem;
-  text-transform: uppercase;
+  padding: 0 30px 0 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -86,8 +84,24 @@ body {
   align-items: center;
 }
 .home__text {
-  width: 1000px;
-  padding: 0 350px 0 200px;
+}
+.text-left {
+  margin: auto;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cta__home {
+  max-width: 400px;
+  text-decoration: none;
+  color: #FFF;
+  text-transform: uppercase;
+  border: 2px #FFF solid;
+  border-radius: 5px;
+  padding: 10px 40px;
+  text-align: center;
+  margin: auto;
 }
 .social-icons {
   display: flex;
@@ -104,14 +118,12 @@ cursor: pointer;
 .social-link {
   padding: 35px 30px 35px 0;
 }
-.text-left {
-  margin-right: auto;
-  max-width: 400px;
-}
 .social-right {
   margin-left: auto;
   margin-top: 0;
 }
+
+
 
 
 /* Media Queries       
@@ -130,7 +142,7 @@ cursor: pointer;
       padding: 0 20px;
       background-position: center;
       background-size: contain;
-      width: 100%;
+      width: 80%;
       margin: auto;
     }
     .social-icons {
