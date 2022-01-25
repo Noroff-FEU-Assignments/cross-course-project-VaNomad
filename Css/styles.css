@@ -1,61 +1,16 @@
 /* Global Styles ----------------- */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
 font-family: futura-pt,sans-serif;
 font-weight: 400;
 font-style: normal;
 }
 
-/* Home Page ---------------------*/
-
-body {
-  width: 100%;
-  background: url(/images/joshua-earle-t6QYC3Zmis0-unsplash.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  font-family: futura, sans-serif;
-  margin: auto;
-}
-.home__main-container {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  /* height: calc(100vh - 73px); */
-  height: 88.9vh;
-  align-items: center;
-}
-.home__text {
-  width: 1000px;
-  padding: 0 350px 0 200px;
-}
-.social-icons {
-  display: flex;
-  flex-direction: column;
-  font-size: 30px;
-  color: #fff;
-  list-style-type: none;
-}
-.social-link:hover, nav a:hover {
-color: #d42d59;
-cursor: pointer;
-}
-.social-link {
-  padding: 55px 30px 55px 0;
-}
-.text-left {
-  margin-right: auto;
-  max-width: 400px;
-}
-.social-right {
-  margin-left: auto;
-  margin-top: 0;
-}
 
 /* NAV -------------------------*/
 
@@ -104,7 +59,6 @@ nav ul {
 nav li {
   margin: 0;
   padding: 0;
-  
 }
 nav a { 
   color: #fff;
@@ -114,6 +68,54 @@ nav a {
   flex-direction: row;
   margin-right: auto;
 }
+
+
+/* Home Page ---------------------*/
+
+body {
+  width: 100%;
+  background: url(/images/joshua-earle-t6QYC3Zmis0-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  font-family: futura, sans-serif;
+  margin: auto;
+}
+.home__main-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  /* height: calc(100vh - 73px); */
+  height: 88.9vh;
+  align-items: center;
+}
+.home__text {
+  width: 1000px;
+  padding: 0 350px 0 200px;
+}
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  color: #fff;
+  list-style-type: none;
+}
+.social-link:hover, nav a:hover {
+color: #d42d59;
+cursor: pointer;
+}
+.social-link {
+  padding: 55px 30px 55px 0;
+}
+.text-left {
+  margin-right: auto;
+  max-width: 400px;
+}
+.social-right {
+  margin-left: auto;
+  margin-top: 0;
+}
+
 
 /* Media Queries       
 --------------------- */
