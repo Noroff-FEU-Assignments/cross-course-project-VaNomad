@@ -21,10 +21,6 @@ header {
   font-size: 1rem;
   text-transform: uppercase;
 }
-.dividend {
-  display: flex;
-  justify-content: space-between;
-}
 .logo {
   max-width: 100px;
 }
@@ -96,16 +92,17 @@ body {
 .social-icons {
   display: flex;
   flex-direction: column;
-  font-size: 30px;
+  font-size: 20px;
   color: #fff;
   list-style-type: none;
+  padding-bottom: 100px;
 }
 .social-link:hover, nav a:hover {
 color: #d42d59;
 cursor: pointer;
 }
 .social-link {
-  padding: 55px 30px 55px 0;
+  padding: 35px 30px 35px 0;
 }
 .text-left {
   margin-right: auto;
@@ -130,7 +127,7 @@ cursor: pointer;
     }
     .home__text {
       display: flex;
-      padding: 0;
+      padding: 0 20px;
       background-position: center;
       background-size: contain;
       width: 100%;
@@ -139,15 +136,13 @@ cursor: pointer;
     .social-icons {
       display: flex;
       align-items: flex-end;
-      padding-bottom: 250px;
+      padding: 10px;
     }
     .social-link {
       float: right;
+      padding: 30px;
     }
     .home__main-container {
-      display: block;
-    }
-    .div21, .div22 {
       display: block;
     }
   }
