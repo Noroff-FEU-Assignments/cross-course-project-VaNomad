@@ -24,18 +24,16 @@ header {
 .logo {
   max-width: 100px;
 }
-nav, #hamburger-menu {
+nav, #check {
   display: none;
   }
-#hamburger-menu:checked ~ nav {
-    display: block;
-}
+
 .hamburger-label {
   float: right;
   color: #FFF;
   padding: 10px 10px;
   font-size: 1.5em;
-  /* align-items: flex-end ; */
+  align-items: flex-end ;
 }
 nav {
   width: 100%;
@@ -47,7 +45,6 @@ nav {
 nav ul {
   display: flex;
   gap: 80px;
-  padding-left: 52vw;
   list-style-type: none;
 }
 nav li {
@@ -79,18 +76,15 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  /* height: calc(100vh - 73px); */
   height: 88.9vh;
   align-items: center;
-}
-.home__text {
 }
 .text-left {
   margin: auto;
   max-width: 400px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
 }
 .cta__home {
   max-width: 400px;
@@ -135,6 +129,10 @@ cursor: pointer;
       display: flex;
     }
     nav ul {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    .navlinks {
       display: none;
     }
     .home__text {
@@ -157,6 +155,9 @@ cursor: pointer;
     .home__main-container {
       display: block;
     }
+    #check:checked ~ .navlinks {
+      display: block;
+   }
   }
 
   /* laptops and desktops - 1025px and bigger */
