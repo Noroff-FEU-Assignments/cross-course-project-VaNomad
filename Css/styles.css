@@ -12,11 +12,11 @@ font-style: normal;
 }
 
 
-/* NAV -------------------------*/
+/* NAV HOME-------------------------*/
 
-header {
+.header__home{
   background-color: rgba(107, 134, 153, 0.3);
-  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
   padding: 10px 0px;
   font-size: 1rem;
   text-transform: uppercase;
@@ -24,9 +24,9 @@ header {
 .logo {
   max-width: 100px;
 }
-nav, #check {
+.nav__home, #check {
   display: none;
-  }
+}
 
 .hamburger-label {
   float: right;
@@ -35,23 +35,23 @@ nav, #check {
   font-size: 1.5em;
   align-items: flex-end ;
 }
-nav {
+.nav__home {
   width: 100%;
   padding: 0 30px 0 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
  }
-nav ul {
+.nav__home ul {
   display: flex;
   gap: 80px;
   list-style-type: none;
 }
-nav li {
+.nav__home li {
   margin: 0;
   padding: 0;
 }
-nav a { 
+.nav__home a { 
   color: #fff;
   text-decoration: none;
   margin: auto;
@@ -63,7 +63,7 @@ nav a {
 
 /* Home Page ---------------------*/
 
-body {
+.body__home {
   width: 100%;
   background: url(/images/joshua-earle-t6QYC3Zmis0-unsplash.jpg);
   background-size: cover;
@@ -94,7 +94,6 @@ body {
   border: 2px #FFF solid;
   border-radius: 5px;
   padding: 10px 40px;
-  text-align: center;
   margin: auto;
 }
 .social-icons {
@@ -118,7 +117,17 @@ cursor: pointer;
 }
 
 
+/* Jackets Page ---------------------*/
 
+.body__jackets {
+}
+.header__jackets {
+  background-color: #9EAC8B;
+}
+.pagetitle__jackets {
+  text-transform: uppercase;
+  color: #FFF;
+}
 
 /* Media Queries       
 --------------------- */
@@ -128,12 +137,13 @@ cursor: pointer;
     .hamburger-label {
       display: flex;
     }
-    nav ul {
+    .nav__home ul {
       flex-direction: column;
       justify-content: flex-start;
-    }
-    .navlinks {
       display: none;
+    }
+    .navlinks li {
+      justify-content: center;
     }
     .home__text {
       display: flex;
