@@ -142,7 +142,7 @@ cursor: pointer;
 /* Jackets Page ---------------------*/
 
 .body__jackets {
-  /* background-color: #9EAC8B; */
+  background-color: #9EAC8B;
 }
 .header__jackets {
   background-color: #9EAC8B;
@@ -154,9 +154,6 @@ cursor: pointer;
   font-size: 1.8rem;
   text-transform: uppercase;
   letter-spacing: .5rem;
-}
-.body__jackets {
-  background-color: #9EAC8B;
 }
 
 /* Media Queries       
