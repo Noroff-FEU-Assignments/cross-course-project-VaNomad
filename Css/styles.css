@@ -9,6 +9,7 @@ body {
 font-family: futura-pt,sans-serif;
 font-weight: 400;
 font-style: normal;
+font-size: 1rem;
 }
 
 
@@ -22,7 +23,7 @@ font-style: normal;
   text-transform: uppercase;
 }
 .logo {
-  max-width: 100px;
+  max-width: 80px;
 }
 .nav__home, #check {
   display: none;
@@ -117,16 +118,36 @@ cursor: pointer;
 }
 
 
+/* NAV HOME-------------------------*/
+
+.nav__jackets {
+  display: grid;
+  grid-template-columns: 1fr 4fr .6fr .6fr .6fr;
+  align-items: center;
+  justify-items: center;
+}
+.nav__symbols {
+  color: #fff;
+  font-size: 1.6rem;
+}
+
 /* Jackets Page ---------------------*/
 
 .body__jackets {
+  /* background-color: #9EAC8B; */
 }
 .header__jackets {
   background-color: #9EAC8B;
+  padding: 10px 0px;
+  text-transform: uppercase;
 }
 .pagetitle__jackets {
-  text-transform: uppercase;
   color: #FFF;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: .5rem;
+  
+
 }
 
 /* Media Queries       
@@ -171,7 +192,7 @@ cursor: pointer;
   }
 
   /* laptops and desktops - 1025px and bigger */
-  @media(min-width: 1025px){
+  @media(min-width: 1025px) {
     .hamburger-label {
       display: none;
     }
