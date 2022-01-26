@@ -126,13 +126,17 @@ cursor: pointer;
 }
 
 
-/* NAV HOME-------------------------*/
+/* NAV JACKETS-------------------------*/
 
 .nav__jackets {
   display: grid;
-  grid-template-columns: 1fr 4fr .6fr .6fr .6fr;
+  grid-template-columns: 1fr 2fr .3fr .3fr .4fr;
   align-items: center;
   justify-items: center;
+}
+.nav__jackets a {
+  justify-self: self-start;
+  padding-left: 30px;
 }
 .nav__symbols {
   color: #fff;
@@ -155,7 +159,64 @@ cursor: pointer;
   text-transform: uppercase;
   letter-spacing: .5rem;
 }
-
+.grid-container__jackets {
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: 
+    ". one . two ."
+    ". three . four ."
+    ". five . six ."
+    ". seven . eight ."
+}
+.item1 {
+  grid-area: one;
+  justify-self: end;
+}
+.item2 {
+  grid-area: two;
+  justify-self: start;
+  padding-left: 5vh;
+}
+.item3 {
+  grid-area: three;
+  justify-self: end;
+  padding-right: 5vh;
+}
+.item4 {
+  grid-area: four;
+  justify-self: start;
+}
+.item5 {
+  grid-area: five;
+  justify-self: end;
+}
+.item6 {
+  grid-area: six;
+  justify-self: start;
+  padding-left: 5vh;
+}
+.item7 {
+  grid-area: seven;
+  justify-self: end;
+  padding-right: 5vh;
+}
+.item8 {
+  grid-area: eight;
+  justify-self: start;
+}
+.hex-img-large__jackets {
+  height: 20vh;
+}
+.hex-img-small__jackets {
+  height: 10vh; 
+}
+img {
+  filter: drop-shadow(0 15px 9px rgb(46, 46, 46));
+}
 /* Media Queries       
 --------------------- */
 
