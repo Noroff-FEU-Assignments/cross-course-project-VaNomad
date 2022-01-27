@@ -16,8 +16,9 @@ font-size: 1rem;
 /* NAV HOME-------------------------*/
 
 .header__home{
+  
   background-color: rgba(107, 134, 153, 0.3);
-  backdrop-filter: blur(18px);
+  /* filter: blur(10px); */
   padding: 10px 0px;
   font-size: 1rem;
   text-transform: uppercase;
@@ -230,6 +231,31 @@ img {
 ;
 
 }
+
+
+/* Jackets Page ---------------------*/
+
+.product__main {
+  max-width: 100%;
+}
+.background__img {
+  width: 100%;
+  position: relative;
+}
+.inserts__product {
+  width: 30%;
+  position: absolute;
+  top: 300px;
+  left: 875px;
+}
+.button__product{
+  width: 20%;
+  position: absolute;
+  top: 900px;
+  left: 1000px;
+
+}
+
 /* Media Queries       
 --------------------- */
 
