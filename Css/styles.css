@@ -13,6 +13,7 @@ font-size: 1rem;
 }
 
 
+
 /* NAV HOME-------------------------*/
 
 .header__home{
@@ -238,6 +239,9 @@ img {
 .product__main {
   max-width: 100%;
 }
+.product__main a {
+  font-family: futura, sans-serif;
+}
 .background__img {
   width: 100%;
   position: relative;
@@ -249,18 +253,32 @@ img {
   left: 875px;
 }
 .button__product{
-  width: 20%;
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 300px;
+  background-color: #708036;
+  border: 2px solid #fff;
+  border-radius: 18px;
   position: absolute;
   top: 900px;
   left: 1000px;
-
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #FFF;
+}
+i::before {
+  padding: 10px 20px 10px 0;
+  font-size: 35px;
 }
 
 /* Media Queries       
 --------------------- */
 
 /* mobile and tablet - 1024px and smaller */
-@media(max-width: 1024px){
+@media(max-width: 1024px) {
     .hamburger-label {
       display: flex;
     }
@@ -294,7 +312,7 @@ img {
     }
     #check:checked ~ .navlinks {
       display: block;
-   }
+    }
   }
 
   /* laptops and desktops - 1025px and bigger */
