@@ -253,11 +253,11 @@ img {
   left: 875px;
 }
 .button__product{
-  display: grid;
-  place-items: center;
+  display: flex;
   justify-content: center;
+  align-items: center;
   height: 80px;
-  width: 300px;
+  width: 350px;
   background-color: #708036;
   border: 2px solid #fff;
   border-radius: 18px;
@@ -269,9 +269,9 @@ img {
   font-size: 30px;
   color: #FFF;
 }
-i::before {
-  padding: 10px 20px 10px 0;
-  font-size: 35px;
+.button__product i {
+  font-size: 40px;
+  padding: 10px 30px 15px 0;
 }
 
 /* Media Queries       
