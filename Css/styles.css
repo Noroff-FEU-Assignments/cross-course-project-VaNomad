@@ -217,6 +217,19 @@ cursor: pointer;
 img {
   filter: drop-shadow(0 15px 9px rgb(46, 46, 46));
 }
+.discount-tag {
+  background-color: #F21111;
+  color: #FFF;
+  text-align: center;
+  font-size: 90px;
+  display: block;
+  margin: auto;
+  width: 80px;
+  filter: drop-shadow(0 10px 10px #000);
+  
+;
+
+}
 /* Media Queries       
 --------------------- */
 
