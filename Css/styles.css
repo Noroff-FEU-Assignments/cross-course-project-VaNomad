@@ -185,13 +185,13 @@ img {
   color: #FFF;
   text-align: center;
   font-size: 90px;
-  margin: auto;
+  margin: 0 auto;
   width: 80px;
   filter: drop-shadow(0 10px 10px #000);
 }
 
 
-/* Jackets Page ---------------------*/
+/* Product Page ---------------------*/
 
 .product__main {
   max-width: 100%;
@@ -247,7 +247,9 @@ img {
     .navlinks {
       position: absolute;
       object-position: left;
+      left: 50%;
       transform: translate(-50%);
+      text-align: justify;
     }
     .navlinks li {
       justify-content: center;
