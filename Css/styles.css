@@ -17,7 +17,6 @@ font-size: 1rem;
 /* NAV HOME-------------------------*/
 
 .header__home{
-  
   background-color: rgba(107, 134, 153, 0.3);
   /* filter: blur(10px); */
   padding: 10px 0px;
@@ -44,6 +43,7 @@ font-size: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
  }
 .nav__home ul {
   display: flex;
@@ -161,54 +161,14 @@ cursor: pointer;
   text-transform: uppercase;
   letter-spacing: .5rem;
 }
-.grid-container__jackets {
-  height: 100vh;
+.grid-container__jackets { 
   display: grid;
+  width: 60%;
+  height: 40vh;
   justify-items: center;
   align-items: center;
-  grid-template-columns: repeat(5,1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-areas: 
-    ". one . two ."
-    ". three . four ."
-    ". five . six ."
-    ". seven . eight ."
-}
-.item1 {
-  grid-area: one;
-  justify-self: end;
-}
-.item2 {
-  grid-area: two;
-  justify-self: start;
-  padding-left: 5vh;
-}
-.item3 {
-  grid-area: three;
-  justify-self: end;
-  padding-right: 5vh;
-}
-.item4 {
-  grid-area: four;
-  justify-self: start;
-}
-.item5 {
-  grid-area: five;
-  justify-self: end;
-}
-.item6 {
-  grid-area: six;
-  justify-self: start;
-  padding-left: 5vh;
-}
-.item7 {
-  grid-area: seven;
-  justify-self: end;
-  padding-right: 5vh;
-}
-.item8 {
-  grid-area: eight;
-  justify-self: start;
+  grid-template-columns: 1fr 1fr;
+  margin: 20px auto;
 }
 .hex-img-large__jackets {
   height: 20vh;
@@ -220,17 +180,14 @@ img {
   filter: drop-shadow(0 15px 9px rgb(46, 46, 46));
 }
 .discount-tag {
+  position: absolute;
   background-color: #F21111;
   color: #FFF;
   text-align: center;
   font-size: 90px;
-  display: block;
   margin: auto;
   width: 80px;
   filter: drop-shadow(0 10px 10px #000);
-  
-;
-
 }
 
 
@@ -286,6 +243,11 @@ img {
       flex-direction: column;
       justify-content: flex-start;
       display: none;
+    }
+    .navlinks {
+      position: absolute;
+      object-position: left;
+      transform: translate(-50%);
     }
     .navlinks li {
       justify-content: center;
