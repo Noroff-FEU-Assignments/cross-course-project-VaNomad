@@ -30,7 +30,6 @@ h1 {
 }
 .logo {
   max-width: 80px;
-
 }
 .nav__home, #check {
   display: none;
@@ -179,6 +178,9 @@ cursor: pointer;
   grid-template-columns: 1fr 1fr;
   margin: 0 auto;
 }
+.hex-img__jackets {
+  filter: drop-shadow(0 15px 9px rgb(46, 10, 46));
+}
 .hex-img-large__jackets {
   height: 20vh;
 }
@@ -241,6 +243,25 @@ img {
   padding: 10px 30px 15px 0;
 }
 
+
+/* Checkout Page ---------------------*/
+
+.checkout__container {
+  width: 100%;
+  margin: 0 auto;
+}
+.images__checkout {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 15%;
+  padding-top: 100px;
+}
+.checkout__img {
+ max-width: 25%;
+}
+
 /* Media Queries       
 --------------------- */
 
@@ -257,9 +278,10 @@ img {
     .navlinks {
       position: absolute;
       object-position: left;
-      left: 50%;
-      transform: translate(-50%);
-      text-align: justify;
+      left: 46%;
+      /* transform: translate(-30%); */
+      transform: translateY(-8%);
+      font-size: 0.8rem;
     }
     .navlinks li {
       justify-content: center;
