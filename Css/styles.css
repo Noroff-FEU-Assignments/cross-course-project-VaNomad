@@ -11,7 +11,12 @@ font-weight: 400;
 font-style: normal;
 font-size: 1rem;
 }
-
+h1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+}
 
 
 /* NAV HOME-------------------------*/
@@ -25,6 +30,7 @@ font-size: 1rem;
 }
 .logo {
   max-width: 80px;
+
 }
 .nav__home, #check {
   display: none;
@@ -132,13 +138,14 @@ cursor: pointer;
 
 .nav__jackets {
   display: grid;
-  grid-template-columns: 1fr 2fr .3fr .3fr .4fr;
+  /* grid-template-columns: 1fr 2fr .3fr .3fr .4fr; */
+  grid-template-columns: 8fr 1fr 1fr 1fr;
   align-items: center;
   justify-items: center;
 }
 .nav__jackets a {
   justify-self: self-start;
-  padding-left: 30px;
+  padding-left: 20px;
 }
 .nav__symbols {
   color: #fff;
@@ -179,7 +186,7 @@ cursor: pointer;
   height: 10vh; 
 }
 img {
-  filter: drop-shadow(0 15px 9px rgb(46, 46, 46));
+  /* filter: drop-shadow(0 15px 9px rgb(46, 46, 46)); */
 }
 .discount-tag {
   background-color: #F21111;
