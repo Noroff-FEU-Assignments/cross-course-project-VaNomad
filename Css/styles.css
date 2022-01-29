@@ -352,7 +352,11 @@ img {
 }
 
 
+/* Checkout Page ---------------------*/
 
+.body__about {
+  background-color: #414141;
+}
 
 /* Media Queries       
 --------------------- */
