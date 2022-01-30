@@ -43,7 +43,6 @@ h2 {
 .nav__home, #check {
   display: none;
 }
-
 .hamburger-label {
   float: right;
   color: #FFF;
@@ -125,8 +124,8 @@ h2 {
   text-decoration: none;
 }
 .social-link:hover, nav a:hover {
-color: #d42d59;
-cursor: pointer;
+  color: #d42d59;
+  cursor: pointer;
 }
 .social-link {
   padding: 35px 30px 35px 0;
@@ -209,46 +208,45 @@ cursor: pointer;
   filter: drop-shadow(0 10px 10px #000);
 }
 
+
 /* PRODUCT PAGE 
 -----------------------------------------------------------*/
 
-.product__main {
-  max-width: 100%;
-  min-height: 80vh;
-}
 .product__main a {
   font-family: futura, sans-serif;
 }
 .background__img {
-  width: 100%;;
+  max-width: 100%;
+  max-height: 100%;
   position: relative;
+  display: block;
+  margin: auto;
 }
 .inserts__container {
   position: absolute;
-  top: 200px;
-  left: 600px;
+  top: 30%;
+  left: 60%;
 }
-.inserts__product {
-  width: 25%;
+.inserts__png {
+  max-width: 60%;
 }
 .button__container {
-  width: 20%;
+  position: absolute;
+  top: 65%;
+  left: 50%;
 }
-.button__product{
-  align-items: center;
-  height: 80px;
-  width: 350px;
+.button__product {
+  min-height: 10%;
+  width: 100px;
   background-color: #708036;
   border: 2px solid #fff;
   border-radius: 18px;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 30px;
-  color: #FFF;
-}
-.button__product i {
-  font-size: 30px;
   padding: 10px 30px 15px 0;
+  color: #FFF;
+  text-align: center;
 }
 
 
