@@ -356,7 +356,7 @@ img {
 
 .background-about {
   width: 100%;
-  height: 1005px;
+  height: 1000px;
   object-fit: cover;
   object-position: top;
   background-color: #707070;
@@ -383,18 +383,26 @@ img {
   left: 50%;
   transform: translate(-50%, -35%);
 }
-.bottom-text__about {
-  top: 65%;
+.bottom-text__about1 {
+  top: 85%;
   left: 75%;
 }
+.bottom-text__about2 {
+  top: 95%;
+  left: 65%;
+}
+.bottom-text__about3 {
+  top: 105%;
+  left: 55%;
+}
 .arrow {
-  color: #fff;
+  color: #000;
   font-size: 2rem;
   width: 100%;
   margin: auto;
   text-align: center;
   position: absolute;
-  bottom: 20px;
+  top: 76%;
 }
 .image-left {
  max-width: 480px;
