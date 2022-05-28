@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content=" RainyDays jackets have come to be the go to rain jacket for all outdoors adventures, with it's reliable protection and durability against the elements. ">
     <script src="https://kit.fontawesome.com/fbce6b241f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/pnt1end.css">
     <link rel="stylesheet" href="Css/styles.css">
     <!-- Hotjar Tracking Code for https://elegant-allen-d6e03e.netlify.app -->
@@ -23,18 +25,26 @@
   </head>
   <body class="body__home"> 
     <header class="header__home">
+      <div>
+        <a href="index.html"><img src="/images/icons/rainydays_logo_no_slogan.png" alt="RainyDays Logo" class="logo"></a>
+      </div>
       <nav class="nav__home">
-        <div>
-          <a href="index.html"><img src="/images/icons/rainydays_logo_no_slogan.png" alt="RainyDays Logo" class="logo"></a>
-        </div>
         <div>
           <label class="hamburger-label" for="check"><i class="fas fa-bars"></i></label>
           <input type="checkbox" id="check">
           <ul class="navlinks">
-            <li><a href="jackets.html">Shop</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a class="navItem" href="jackets.html">Shop</a></li>
+            <li><a class="navItem" href="about.html">About</a></li>
+            <li><a class="navItem" href="#">Contact</a></li>
           </ul>
+        </div>
+        <div>
+          <a href="#" class="search-bar">search</a>
+          <a href="#" class="cart">cart</a>
+          <button class="burger">
+            <i class="menuIcon material-icons">menu</i>
+            <i class="closeIcon material-icons">close</i>
+          </button>
         </div>
       </nav>
     </header>
