@@ -9,10 +9,15 @@
   box-sizing: border-box;
 }
 body {
-  font-family: futura-pt,sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1rem;
+  width: 100%;
+  background: url(/images/photos/joshua-earle-t6QYC3Zmis0-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  margin: auto;
 }
 h1 {
   position: absolute;
@@ -28,20 +33,86 @@ h2 {
   filter: drop-shadow(0 3px 2px #000);
 }
 
-
-/* NAV HOME 
------------------------------------------------------------*/
-
-.header__home{
+/* 
+—————————————————————————‡——————————————————————— NAV NEW */
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+.container {
+  float: right;
+  height: 1.8rem;
+  width: 2.6rem;
+  margin-top: 1.2rem;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.menulogo {
+  height: .3rem;
+  width: 2rem;
+  border-radius: .2rem;
+  background-color: #000;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu {
+  position: absolute;
+  background-color: pink;
+  width: 50%;
+  height: 32vh;
+  padding: 3rem;
+  transform: translateX(-50rem);
+  transition: 0.5s;
+}
+.menu li {
+  list-style-type: none;
+  border-top: 1px solid rgb(243, 153, 201);
+  padding: 1rem;
+  text-align: center;
+}
+.showmenu {
+  transform: translateX(0);
+}
+.hidemenu {
+
+}
+.menu li:first-child {
+  border-top: none;
+}
+.menu li:first-child a {
+  font-weight: bold;
+}
+.menu li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.15rem;
+  transition: font-weight 0.2s;
+}
+.menu li a:hover {
+  font-weight: bold;
+}
+@media screen and (min-width:1000px){
+  .menu{
+    width: 500px;
+  }
+}
+@media screen and (max-width:600px){
+  .menu li a{
+    font-size: .8rem;
+  }
+}
+
+/* NAV
+-----------------------------------------------------------*/
+.header__home{
+  align-items: center;
   background-color: var(--clr-white);
-  font-size: .9rem;
-  text-transform: lowercase;
 }
 .logo {
   max-width: 80px;
-  margin: 0 3rem;
-  padding-top: 5px;
 }
 .nav__home, #check {
   display: none;
@@ -55,7 +126,8 @@ h2 {
 }
 .nav__home {
   width: 100%;
-  padding: 0 30px 9px 20px;
+  /* padding: 0 30px 9px 20px; */
+  gap: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -83,15 +155,6 @@ h2 {
 /* HOME PAGE 
 -----------------------------------------------------------*/
 
-.body__home {
-  width: 100%;
-  background: url(/images/photos/joshua-earle-t6QYC3Zmis0-unsplash.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  font-family: futura, sans-serif;
-  margin: auto;
-}
 .home__main-container {
   width: 100%;
   display: flex;
@@ -441,7 +504,7 @@ h2 {
 -----------------------------------------------------------*/
 
 /* mobile and tablet - 1024px and smaller */
-@media(max-width: 1024px) {
+@media(max-width: 24px) {
     .hamburger-label {
       display: flex;
     }
@@ -490,6 +553,15 @@ h2 {
   @media(min-width: 1025px) {
     .hamburger-label {
       display: none;
+    }
+    .container.active .menulogo:nth-child(2){
+      opacity: 0;
+    }
+    .container.active .menulogo:nth-child(1){
+      transform: translateY(1rem) rotate(45deg);
+    }
+    .container.active .menulogo:nth-child(3){
+      transform: translateY(-1rem) rotate(-45deg);
     }
 
     
