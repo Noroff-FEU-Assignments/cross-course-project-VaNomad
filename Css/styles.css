@@ -13,7 +13,7 @@ body {
   font-weight: 400;
   font-style: normal;
   width: 100%;
-  background: url(/images/photos/joshua-earle-t6QYC3Zmis0-unsplash.jpg);
+  background: url(/images/photos/pexels-darshak-pandya-4378759.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom right;
@@ -139,7 +139,7 @@ h2 {
 /* HOME PAGE 
 -----------------------------------------------------------*/
 
-.home__main-container {
+.home-container {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
