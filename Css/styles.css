@@ -35,9 +35,13 @@ h2 {
 
 /* 
 —————————————————————————‡——————————————————————— NAV NEW */
+.logo {
+  max-width: 100px;
+  margin-left: 2rem;
+}
 .list-box {
+  float: right;
   display: flex;
-  justify-content: space-around;
 }
 .burger-container {
   width: 90%;
@@ -55,7 +59,7 @@ h2 {
   cursor: pointer;
   display: none;
 }
-.bar {
+.strip {
   display: block;
   height: .3rem;
   width: 2rem;
@@ -63,6 +67,12 @@ h2 {
   background-color: #000;
   justify-content: space-around;
   align-items: center;
+}
+.showmenu {
+  transform: translateX(0);
+}
+.nav-link {
+  padding: 0 2rem 0 2rem;
 }
 .nav-menu li:first-child {
   border-top: none;
@@ -87,9 +97,7 @@ h2 {
   align-items: center;
   background-color: var(--clr-white);
 }
-.logo {
-  max-width: 80px;
-}
+
 .nav__home, #check {
   display: none;
 }
@@ -478,8 +486,6 @@ h2 {
 
 /* MEDIA QUERIES 
 -----------------------------------------------------------*/
-
-/* mobile and tablet - 1024px and smaller */
 @media(max-width: 768px) {
     .hamburger-label {
       display: flex;
@@ -523,15 +529,13 @@ h2 {
     #check:checked ~ .navlinks {
       display: block;
     }
-  }
-  @media(max-width: 768px) {
     .nav-menu {
       position: fixed;
       background-color: pink;
       width: 50%;
       height: 100vh;
       padding: 3rem;
-      transform: translateX(-50rem);
+      transform: translateX(-100rem);
       transition: 0.5s;
     }
     .nav-menu li {
@@ -546,30 +550,34 @@ h2 {
     .hamburger{
       display: flex;
     }
-    .hamburger.active .bar:nth-child(2){
+    .hamburger.active .strip:nth-child(2){
       opacity: 0;
     }
-    .hamburger.active .bar:nth-child(1){
+    .hamburger.active .strip:nth-child(1){
       transform: translateY(8px) rotate(45deg);
     }
-    .hamburger.active .bar:nth-child(3){
+    .hamburger.active .strip:nth-child(3){
       transform: translateY(-8px) rotate(-45deg);
     }
-    
   }
   @media(min-width: 769px) {
-    
-    .showmenu {
-      transform: translateX(0);
-    }
     .nav-menu{
       min-height: 70px;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
     }
-    .nav-menu li {
+    .nav-link {
       list-style: none;
+    }
+    .list-box {
+      flex-direction: row;
+      justify-content: center
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
   }
 
