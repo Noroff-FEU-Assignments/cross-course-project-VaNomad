@@ -1,9 +1,13 @@
-const menulogo = document.querySelector(".container");
-const menu = document.querySelector(".menu");
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
 
-menulogo.addEventListener("click", function () {
-  menu.classList.toggle('showmenu');
-  menulogo.classList.toggle('showmenu');
+hamburger.addEventListener("click", function () {
+  hamburger.classList.toggle('showmenu');
+  hamburger.classList.toggle('active');
+  navMenu.classList.toggle('showmenu');
+  navMenu.classList.toggle('active');
 });
+
+
 
 
