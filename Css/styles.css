@@ -468,11 +468,17 @@ nav {
 
 /* MEDIA QUERIES 
 -----------------------------------------------------------*/
+@media(min-width: 200px) and (max-width: 480px) {
+    .home__text {
+    width: 200px;
+    }
+}
 @media(max-width: 768px) {
+    
     .nav-menu {
       position: fixed;
       background-color: var(--clr-green);
-      width: 50%;
+      width: 60%;
       height: 100vh;
       padding: 3rem;
       transform: translateX(-100rem);
