@@ -77,9 +77,13 @@ nav {
 }
 .nav-link {
   padding: 0 2rem 0 2rem;
+  color: var(--clr-black);
 }
 .nav-menu li:first-child {
   border-top: none;
+}
+.nav-menu li:last-child {
+  border-top:none;
 }
 .nav-menu li:first-child a {
   font-weight: bold;
@@ -452,7 +456,6 @@ nav {
     .nav-menu {
       position: fixed;
       background-color: pink;
-      opacity: 90%;
       width: 50%;
       height: 100vh;
       padding: 3rem;
@@ -461,7 +464,7 @@ nav {
     }
     .nav-menu li {
       list-style-type: none;
-      border-top: 1px solid rgb(243, 153, 201);
+      border-top: 1px solid rgb(225, 92, 163);
       padding: 1rem;
       text-align: center;
     }
@@ -487,7 +490,7 @@ nav {
       transform: translateY(-10px) rotate(-45deg);
     }
     .social-icons {
-      width: 180px;
+      width: 150px;
       padding: 20px;
       margin: 0 auto;
       left: 0;
