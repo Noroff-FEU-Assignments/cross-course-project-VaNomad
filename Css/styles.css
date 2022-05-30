@@ -47,6 +47,7 @@ nav {
 }
 .nav-menu {
   min-height: 70px;
+  z-index: 100;
 }
 .burger-container {
   width: 90%;
@@ -447,6 +448,7 @@ nav {
     .nav-menu {
       position: fixed;
       background-color: pink;
+      opacity: 90%;
       width: 50%;
       height: 100vh;
       padding: 3rem;
@@ -461,9 +463,6 @@ nav {
     }
     .showmenu {
       transform: translateX(0);
-    }
-    .burger-container {
-      display: block;
     }
     .hamburger{
       display: flex;
@@ -495,10 +494,14 @@ nav {
     .nav-link {
       list-style: none;
     }
+    .sub-link {
+      display: none;
+    }
     .social-icons {
       flex-direction: column;
       margin-left: 4rem;
       margin-top: 23vh;
     }
+
   }
 
