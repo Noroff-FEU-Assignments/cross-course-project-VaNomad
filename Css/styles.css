@@ -144,6 +144,10 @@ nav {
 .social-link {
   padding: 1rem .5rem;
 }
+.social-icons-mobile {
+  display: flex;
+  justify-content: space-around;
+}
 .licence {
   padding: 10px 20px;
   font-size: 0.6rem;
@@ -463,6 +467,11 @@ nav {
     }
     .showmenu {
       transform: translateX(0);
+      transition: 0.4s;
+    }
+    .hidesocial {
+      transform: translateX(100rem);
+      transition: 0.5s;
     }
     .hamburger{
       display: flex;
@@ -495,6 +504,9 @@ nav {
       list-style: none;
     }
     .sub-link {
+      display: none;
+    }
+    .social-sub-link {
       display: none;
     }
     .social-icons {
