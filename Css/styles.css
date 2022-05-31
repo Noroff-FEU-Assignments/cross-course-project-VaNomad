@@ -1,13 +1,13 @@
 /* GLOBAL STYLES 
 -----------------------------------------------------------*/
 :root {
-  --clr-white: #fff;
   --clr-black: #000;
-  --clr-grey: #929191;
-  --clr-neongreen: #74E651;
+  --clr-white: #F2F2F2;
+  --clr-grey: #5A6E61;
   --clr-green: #9EAC8B;
-  --clr-lightgreen: #bdd39e;
-  --clr-blue: #6B8699;
+  --clr-lightgreen: #BAC9A3;
+  --clr-blue: #4990A6;
+  --clr-lightblue: #84B7C4;
   --clr-red: #C42121;
   
 }
@@ -18,9 +18,6 @@
   font-family: 'Poppins', sans-serif;
 }
 h1 {
-  /* position: absolute;
-  left: 50%;
-  transform: translateX(-50%); */
   color: var(--clr-white);
 }
 h2 {
@@ -114,12 +111,14 @@ nav {
 -----------------------------------------------------------*/
 .image-container {
   width: 100%;
-  background: url(/images/photos/pexels-darshak-pandya-4378759.jpg) var(--clr-black) no-repeat;
+  background: url(/images/photos/pexels-darshak-pandya-4378759.jpg);
+  background-repeat: no-repeat;
+  background-color: var(--clr-black);
   background-size: cover;
   background-position: 0 62%;
 }
 .home-container {
- height: 91.1vh;
+ height: 91.1vh; 
  display: flex;
  flex-direction: column;
 }
@@ -134,7 +133,6 @@ nav {
   white-space: nowrap; 
 }
 .home-logo {
-  margin-top: 2rem 0;
   text-align: center;
 }
 .home__text {
@@ -181,74 +179,11 @@ nav {
   text-transform: uppercase;
 }
 .licence a {
-  color: #FFF;
+  color: var(--clr-white);
 }
-
-
-/* NAV ALL 
------------------------------------------------------------*/
-
-.nav__all {
-  display: grid;
-  /* grid-template-columns: 1fr 2fr .3fr .3fr .4fr; */
-  grid-template-columns: 8fr 1fr 1fr 1fr;
-  align-items: center;
-  justify-items: center;
-}
-.nav__all a {
-  justify-self: self-start;
-  padding-left: 20px;
-}
-.nav__symbols {
-  color: #fff;
-  font-size: 1.6rem;
-}
-
 
 /* JACKETS PAGE 
 -----------------------------------------------------------*/
-
-.body__jackets {
-  background-color: #9EAC8B;
-}
-.header__jackets {
-  background-color: #9EAC8B;
-  padding: 10px 0px;
-  text-transform: uppercase;
-}
-.pagetitle__jackets {
-  color: #FFF;
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  letter-spacing: .5rem;
-}
-.grid-container__jackets { 
-  display: grid;
-  width: 60%;
-  justify-items: center;
-  align-items: center;
-  grid-template-columns: 1fr 1fr;
-  margin: 0 auto;
-}
-.hex-img {
-  filter: drop-shadow(0 15px 9px rgb(46, 23, 46));
-}
-.hex-img-large__jackets {
-  height: 20vh;
-}
-.hex-img-small__jackets {
-  height: 10vh; 
-}
-.discount-tag {
-  background-color: #F21111;
-  color: #FFF;
-  text-align: center;
-  font-size: 90px;
-  margin: 0 auto;
-  width: 100px;
-  filter: drop-shadow(0 10px 10px #000);
-}
-
 
 /* PRODUCT PAGE 
 -----------------------------------------------------------*/
@@ -488,7 +423,7 @@ nav {
     
     .nav-menu {
       position: fixed;
-      background-color: var(--clr-green);
+      background-color: var(--clr-lightblue);
       width: 60%;
       height: 100vh;
       padding: 3rem;
@@ -497,7 +432,7 @@ nav {
     }
     .nav-menu li {
       list-style-type: none;
-      border-top: 1px solid var(--clr-lightgreen);
+      border-top: 1px solid var(--clr-blue);
       padding: 1rem;
       text-align: center;
     }

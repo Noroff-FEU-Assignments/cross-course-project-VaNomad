@@ -12,9 +12,7 @@ hamburger.addEventListener("click", function () {
   navMenu.classList.toggle('showmenu');
   socialIcons.classList.toggle('hidesocial');
   ctaHome.classList.toggle('hidesocial');
-  homeLogo.classList.toggle('hidesocial');
-  
-
+  homeLogo.classList.toggle('hidesocial')
 });
 
 
