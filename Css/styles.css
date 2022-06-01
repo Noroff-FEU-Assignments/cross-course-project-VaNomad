@@ -9,22 +9,27 @@
   --clr-blue: #4990A6;
   --clr-lightblue: #84B7C4;
   --clr-red: #C42121;
+  --clr-text: #203230;
   
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
   font-family: 'Poppins', sans-serif;
 }
 h1 {
-  color: var(--clr-white);
+  font-weight: 700;
+  color: var(--clr-text);
 }
 h2 {
-  color: var(--clr-white);
+  color: var(--clr-text);
   font-weight: 400;
-  letter-spacing: 5px;
-  filter: drop-shadow(0 3px 2px var(--clr-black));
+}
+p {
+  font-weight: 300;
+  color: var(--clr-text);
 }
 
 /* 
@@ -103,7 +108,7 @@ nav {
 
 /* HOME PAGE 
 -----------------------------------------------------------*/
-.image-container {
+.home-container {
   width: 100%;
   background: url(/images/photos/pexels-darshak-pandya-4378759.jpg);
   background-repeat: no-repeat;
@@ -111,7 +116,7 @@ nav {
   background-size: cover;
   background-position: 0 62%;
 }
-.home-container {
+.home-content {
  height: 91.1vh; 
  display: flex;
  flex-direction: column;
@@ -159,7 +164,7 @@ nav {
 .social-link a:hover, nav a:hover {
   color: var(--clr-red);
   cursor: pointer;
-  font-size: 19px;
+  font-size: 1.13rem;
 }
 .social-link {
   padding: 1rem .5rem;
@@ -462,7 +467,7 @@ nav {
       justify-content: space-between;
       position: relative;
     }
-    .image-container {
+    .home-container {
       background-position: center;
     }
   }
