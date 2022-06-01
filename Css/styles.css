@@ -94,17 +94,11 @@ nav {
 .nav-menu li:last-child {
   border-top:none;
 }
-.nav-menu li:first-child a {
-  font-weight: bold;
-}
 .nav-menu li a {
   color: var(--clr-black);
   text-decoration: none;
   font-size: 1.15rem;
   transition: font-weight 0.2s;
-}
-.nav-menu li a:hover {
-  font-weight: bold;
 }
 
 /* HOME PAGE 
@@ -165,6 +159,7 @@ nav {
 .social-link a:hover, nav a:hover {
   color: var(--clr-red);
   cursor: pointer;
+  font-size: 19px;
 }
 .social-link {
   padding: 1rem .5rem;
