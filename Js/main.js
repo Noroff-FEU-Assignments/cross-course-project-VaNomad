@@ -1,7 +1,7 @@
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const socialIcons = document.querySelector(".social-icons");
-const ctaHome = document.querySelector(".cta__home");
+const ctaHome = document.querySelector(".cta-home");
 const homeLogo = document.querySelector('.home-logo');
 
 
