@@ -253,6 +253,7 @@ nav .list-box .hamburger:hover .strip:nth-child(3) {
 .flex-row {
   display: flex;
   justify-content: space-around;
+  text-align: center;
   padding: 2rem;
 }
 .flex-column {
@@ -570,6 +571,10 @@ nav .list-box .hamburger:hover .strip:nth-child(3) {
   }
   .home-container {
     background-position: center;
+  }
+  .product .container .box {
+    flex-wrap: wrap;
+    height: 90vh;
   }
 }
 @media(min-width: 769px) {
