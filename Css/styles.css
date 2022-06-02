@@ -65,7 +65,12 @@ nav .list-box .nav-menu li a {
   color: var(--clr-black);
   text-decoration: none;
   font-size: 1.15rem;
-  transition: font-weight 0.2s;
+  transition: 0.2s;
+}
+nav .list-box .nav-menu li a:hover {
+  color: var(--clr-red);
+  letter-spacing: 1px;
+  font-weight: bold;
 }
 nav .list-box .nav-menu .social-icons-mobile {
   display: flex;
@@ -77,11 +82,6 @@ nav .list-box .nav-menu .social-icons-mobile .nav-link {
 }
 nav .list-box .nav-menu .social-icons-mobile .social-link {
   padding: 1rem .5rem;
-}
-nav .list-box .nav-menu .social-icons-mobile .social-link a:hover, nav a:hover {
-  color: var(--clr-red);
-  cursor: pointer;
-  font-size: 1.13rem;
 }
 nav .list-box .hamburger {
   float: right;
@@ -137,6 +137,9 @@ nav .list-box .hamburger:hover .strip:nth-child(3) {
 }
 .home-container .social-icons a {
   color: var(--clr-black);
+}
+.home-container .social-icons a:hover {
+  color: var(--clr-red);
 }
 .home-container .home-content { 
  height: 100vh;
