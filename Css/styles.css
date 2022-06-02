@@ -53,7 +53,7 @@ nav .list-box .logo-box .logo {
 nav .list-box .nav-menu {
   min-height: 70px;
   z-index: 100;
-  margin-right: 1rem;
+  width: 50%;
 }
 nav .list-box .nav-menu li:first-child {
   border-top: none;
@@ -138,17 +138,21 @@ nav .list-box .hamburger:hover .strip:nth-child(3) {
 .home-container .social-icons a {
   color: var(--clr-black);
 }
-.home-container .home-content {
- height: 91.1vh; 
+.home-container .home-content { 
+ height: 100vh;
  display: flex;
  flex-direction: column;
+ align-items: center;
 }
-.home-box {
-  height: 620px;
-  margin: auto;
+.home-container .home-content .home-box {
+  height: 100%;
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.home-container .home-content p {
+  align-self: start;
 }
 .home-container .home-content .home-box h1 {
   white-space: nowrap; 
@@ -466,9 +470,9 @@ nav .list-box .hamburger:hover .strip:nth-child(3) {
     width: 250px;
     margin: auto;
     }
-    .home-logo h1 {
-      font-size: 1.2rem;
-    }
+  .home-logo h1 {
+    font-size: 1.2rem;
+  }
 }
 @media(max-width: 768px) {
   .nav-menu {
@@ -524,7 +528,8 @@ nav .list-box .hamburger:hover .strip:nth-child(3) {
 @media(min-width: 769px) {
   nav .list-box .nav-menu{
     display: flex;
-    justify-content: space-between;
+    width: 50%;
+    justify-content: space-around;
     align-items: center;
   }
   nav .list-box .nav-menu .nav-link {
@@ -538,6 +543,8 @@ nav .list-box .hamburger:hover .strip:nth-child(3) {
   }
   .home-container .social-icons {
     flex-direction: column;
+    justify-content: space-between;
+    height: 30%;
     margin-left: 4rem;
     margin-top: 23vh;
   }
