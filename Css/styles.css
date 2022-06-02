@@ -166,7 +166,7 @@ nav .list-box .hamburger:hover .strip:nth-child(3) {
 .home-container .home-content .home-box .home-logo img {
   max-width: 300px;
 }
-.cta__home {
+.home-container .home-content .home-box .cta__home {
   width: 200px;
   margin: auto;
   text-decoration: none;
@@ -180,7 +180,7 @@ nav .list-box .hamburger:hover .strip:nth-child(3) {
   letter-spacing: .1rem;
   transition: 0.3s;
 }
-.cta__home:hover {
+.home-container .home-content .home-box .cta__home:hover {
   box-shadow: var(--clr-white) 0 0 5px 0;
   letter-spacing: .2rem;
 }
