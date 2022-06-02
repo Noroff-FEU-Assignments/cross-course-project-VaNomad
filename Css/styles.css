@@ -250,25 +250,40 @@ nav .list-box .hamburger:hover .strip:nth-child(3) {
 
 /* PRODUCT PAGE 
 -----------------------------------------------------------*/
+.flex-row {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+.flex-column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 .product {
   width: 100%;
   height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .product .container {
+  width: 70%;
   display: flex;
+  justify-content: space-between;
 }
 .product .container .box {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  box-shadow: 0 0 .7rem .3rem var(--clr-white);
 }
 .product .container .box .img-box {
   position: relative;
-  height: 20rem;
+  width: 100%;
+  height: 100%;
+
 }
 .product .container .box .img-box img {
   position: relative;
@@ -277,20 +292,40 @@ nav .list-box .hamburger:hover .strip:nth-child(3) {
   object-fit: cover;
   border: .1rem solid var(--clr-white);
 }
-.swatch {
-  position:relative;
-  margin: 1rem;
-  width: 1rem;
-  height: 1rem;
-  border-radius: 50%;
+.product .container .box .options-box .sizes-box h2 {
+  text-transform: uppercase;
+  font-weight: 700;
 }
-.one {
+.product .container .box .options-box .colours-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.product .container .box .options-box .colours-box .swatches {
+  display: flex;
+  justify-content: space-around;
+  
+}
+.product .container .box .options-box .colours-box .swatch {
+  position:relative;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.product .container .box .options-box .colours-box .swatch:hover {
+  margin-top: .5rem;
+  border: 4px solid var(--clr-black);
+  cursor: pointer;
+}
+.product .container .box .options-box .colours-box .one {
   background-color: var(--clr-blue);
 }
-.two {
+.product .container .box .options-box .colours-box .two {
   background-color: var(--clr-red);
 }
-.three {
+.product .container .box .options-box .colours-box .three {
   background-color: var(--clr-green);
 }
 /* CHECKOUT PAGE
