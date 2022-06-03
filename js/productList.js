@@ -1,4 +1,4 @@
-const productArray = [
+export const productsArray = [
   {
     name: "Calderon",
     id: 0,
