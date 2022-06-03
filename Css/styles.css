@@ -134,7 +134,6 @@ nav .list-box .hamburger:hover .strip:nth-child(3) {
   list-style-type: none;
   display: flex;
   position: absolute;
-  transition: 0.3s;
 }
 .home-container .social-icons a {
   color: var(--clr-black);
@@ -544,7 +543,7 @@ nav .list-box .hamburger:hover .strip:nth-child(3) {
   }
   .hidesocial {
     transform: translateX(100rem);
-    transition: 0.5s;
+    transition: 1.5s;
   }
   nav .list-box .hamburger{
     display: flex;
