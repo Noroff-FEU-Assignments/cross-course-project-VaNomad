@@ -275,7 +275,7 @@ nav .list-box .hamburger:hover .strip:nth-child(3) {
   object-fit: cover;
   border: .1rem solid var(--clr-white);
 }
-.cart {
+.cart-icon {
   font-size: 2rem;
   margin-left: 1.8rem;
   z-index: 1000;
@@ -283,7 +283,7 @@ nav .list-box .hamburger:hover .strip:nth-child(3) {
   color: var(--clr-blue);
   transition: 0.6s;
 }
-.cart:hover {
+.cart-icon:hover {
   rotate: 15deg;
   cursor: pointer;
   color: var(--clr-lightgreen);
@@ -458,8 +458,23 @@ nav .list-box .hamburger:hover .strip:nth-child(3) {
 
 /* CHECKOUT PAGE
 -----------------------------------------------------------*/
-
-.checkout__img {
+.cart {
+  border: 1px solid var(--clr-grey);
+  min-width: 200px;
+  max-width: 600px;
+  margin: auto;
+  position: fixed;
+  top: 100px;
+  left: 100px;
+  background-color: var(--clr-lightblue);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.cart a {
+  text-decoration: none;
+}
+/* .checkout__img {
   max-width: 25%;
 }
 
@@ -482,7 +497,6 @@ nav .list-box .hamburger:hover .strip:nth-child(3) {
 .total__checkout.images__checkout {
   display: flex;
   align-items: center;
-  /* flex: 1; */
   max-width: 70%;
   padding-bottom: 60px;
 }
@@ -500,7 +514,6 @@ nav .list-box .hamburger:hover .strip:nth-child(3) {
 
 .button__checkout {
   background-color: #BCCB9D;
-  /* border: 2px solid #fff; */
   border-radius: 14px;
   text-decoration: none;
   text-transform: uppercase;
@@ -564,7 +577,7 @@ nav .list-box .hamburger:hover .strip:nth-child(3) {
 .progressbar-tags {
   margin-top: 10px;
   text-transform: uppercase;
-}
+} */
 
 
 /* ABOUT PAGE 
