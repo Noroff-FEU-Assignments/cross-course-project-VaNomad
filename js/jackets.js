@@ -12,9 +12,9 @@ productsArray.forEach(function (product) {
   <div class="item">
           <div class="box">
             <div class="flex-row">
-              <a class="cart-icon">
+              <button class="cart-icon" data-product="${product.name}">
                 <i class="fa fa-shopping-bag"></i>
-              </a>
+              </button>
               <div class="flex-row">
                 <h3>${product.name}</h3>
                 <p>${product.price},-</p>
@@ -48,9 +48,17 @@ productsArray.forEach(function (product) {
   `
 });
 
+const cartButton = document.querySelectorAll("button");
+cartButton.forEach(function (button) {
+  button.onclick = function (event) {
+    console.log(event.target.dataset.product);
+    
+  }
+});
 
 
-{/* <div class="box">
+
+/* <div class="box">
 //             <div class="img-box">
 //               <img src="${jackets.imgSrc}" alt="${jackets.description}">
 //             </div>
@@ -78,7 +86,7 @@ productsArray.forEach(function (product) {
 //                 </div>
 //               </div>
 //             </div>
-//           </div> */}
+//           </div> */
 
 
 

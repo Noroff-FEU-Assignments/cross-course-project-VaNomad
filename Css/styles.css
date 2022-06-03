@@ -260,6 +260,7 @@ nav .list-box .hamburger:hover .strip:nth-child(3) {
   width: 340px;
   margin: 20px;
   box-shadow: 0 0 .7rem .3rem var(--clr-white);
+  border-radius: 10px;
 }
 
 .img-box {
@@ -273,7 +274,11 @@ nav .list-box .hamburger:hover .strip:nth-child(3) {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border: .1rem solid var(--clr-white);
+}
+button {
+  border: none;
+  background-color: inherit;
+  
 }
 .cart-icon {
   font-size: 2rem;
@@ -281,12 +286,12 @@ nav .list-box .hamburger:hover .strip:nth-child(3) {
   z-index: 1000;
   position: relative;
   color: var(--clr-blue);
-  transition: 0.6s;
+  transition: 0.4s;
 }
 .cart-icon:hover {
   rotate: 15deg;
   cursor: pointer;
-  color: var(--clr-lightgreen);
+  color: var(--clr-green);
 }
 .text {
   padding: 10px 20px;
@@ -463,6 +468,7 @@ nav .list-box .hamburger:hover .strip:nth-child(3) {
   min-width: 200px;
   max-width: 600px;
   margin: auto;
+  padding: 1rem;
   position: fixed;
   top: 100px;
   left: 100px;
@@ -473,7 +479,12 @@ nav .list-box .hamburger:hover .strip:nth-child(3) {
 }
 .cart a {
   text-decoration: none;
+  border: 1px solid var(--clr-grey);
+  background-color: var(--clr-green);
+  padding: 2px;
+  text-align: center;
 }
+
 /* .checkout__img {
   max-width: 25%;
 }
