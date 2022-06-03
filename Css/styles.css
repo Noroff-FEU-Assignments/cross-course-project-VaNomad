@@ -31,10 +31,16 @@ h2 {
   color: var(--clr-text);
   font-weight: 500;
 }
+h3 {
+  color: var(--clr-text);
+  font-weight: 600;
+  margin: auto;
+}
 
 p {
   font-weight: 300;
   color: var(--clr-text);
+  margin: auto;
 }
 
 /* 
@@ -269,7 +275,26 @@ nav .list-box .hamburger:hover .strip:nth-child(3) {
   object-fit: cover;
   border: .1rem solid var(--clr-white);
 }
-
+.cart {
+  font-size: 2rem;
+  margin-left: 1.8rem;
+  z-index: 1000;
+  position: relative;
+  color: var(--clr-blue);
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.cart:hover {
+  font-size: 2.2rem;
+  cursor: pointer;
+  background-color: var(--clr-red);
+}
+.text {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .jackets .content .box .text .btn {
   text-decoration: none;
   text-align: center;
@@ -283,6 +308,55 @@ nav .list-box .hamburger:hover .strip:nth-child(3) {
 .jackets .content .box .text .btn:hover {
   letter-spacing: .2rem;
 }
+.products .item .box .options-box .sizes-box .size {
+  margin-bottom: 1rem;
+}
+.products .item .box .options-box .sizes-box h4 {
+  text-transform: uppercase;
+}
+.products .item .box .options-box .sizes-box .size:hover {
+  border: 1px solid var(--clr-black);
+  cursor: pointer;
+}
+
+.products .item .box .options-box .colours-box {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.products .item .box .options-box .colours-box .swatches {
+  display: flex;
+  justify-content: space-around;
+}
+
+.products .item .box .options-box .colours-box .swatch {
+  position: relative;
+  margin: .5rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.products .item .box .options-box .colours-box .swatch:hover {
+  /* margin-top: .5rem; */
+  margin: .3rem;
+  border: 4px solid var(--clr-black);
+  cursor: pointer;
+}
+
+.products .item .box .options-box .colours-box .one {
+  background-color: var(--clr-blue);
+}
+
+.products .item .box .options-box .colours-box .two {
+  background-color: var(--clr-red);
+}
+
+.products .item .box .options-box .colours-box .three {
+  background-color: var(--clr-green);
+}
 
 
 
@@ -290,9 +364,9 @@ nav .list-box .hamburger:hover .strip:nth-child(3) {
 -----------------------------------------------------------*/
 .flex-row {
   display: flex;
+  flex: 1;
   justify-content: space-around;
   text-align: center;
-  padding: 2rem;
 }
 
 .flex-column {
