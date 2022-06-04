@@ -476,8 +476,8 @@ button {
 -----------------------------------------------------------*/
 .cart {
   border: 1px solid var(--clr-grey);
-  min-width: 200px;
-  max-width: 600px;
+  min-width: 300px;
+  max-width: 800px;
   margin: auto;
   padding: 1rem;
   position: fixed;
@@ -487,6 +487,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  display: none;
 }
 .cart a {
   text-decoration: none;
@@ -495,7 +496,22 @@ button {
   padding: 2px;
   text-align: center;
 }
-
+.cart-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  border: 2px solid white;
+  background-size: cover;
+}
+.cart-item, 
+.cart-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart-price {
+  padding: 10px;
+}
 /* .checkout__img {
   max-width: 25%;
 }

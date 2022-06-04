@@ -2,6 +2,10 @@ import getCart, { saveCart } from "./utils/storage.js";
 import { renderCartCount } from "./components/menu/menu.js";
 import { productsArray } from "./constants/productList.js";
 const productBox = document.querySelector(".products");
+const floatingCart = document.querySelector(".cart");
+const cartList = document.querySelector(".cart-list");
+
+
 
 renderCartCount();
 
@@ -62,36 +66,24 @@ cartButton.forEach(function (cartButton) {
 
 		cartArray.push(product);
 		saveCart(cartArray);
-		renderCartCount();
+    renderCartCount();
+    showCart(cartArray);
+    
 	};
 });
 
-/* <div class="box">
-//             <div class="img-box">
-//               <img src="${jackets.imgSrc}" alt="${jackets.description}">
-//             </div>
-//             <div class="options-box flex-column">
-//               <div class="colours-box">
-//                 <div class="flex-row">
-//                   <h1 class="title-text">choose your jacket color</h1>
-//                 </div>
-//                 <div class="flex-row">
-//                   <div class="swatch one"></div>
-//                   <div class="swatch two"></div>
-//                   <div class="swatch three"></div>
-//                 </div>
-//               </div>
-//               <div class="sizes-box flex-column">
-//                 <div class="flex-row">
-//                   <h1 class="title-text">choose your jacket size</h1>
-//                 </div>
-//                 <div class="flex-row">
-//                   <div class="size"><h2>xs</h2></div>
-//                   <div class="size"><h2>s</h2></div>
-//                   <div class="size"><h2>m</h2></div>
-//                   <div class="size"><h2>l</h2></div>
-//                   <div class="size"><h2>xl</h2></div>
-//                 </div>
-//               </div>
-//             </div>
-//           </div> */
+function showCart(cartItems) {
+  floatingCart.style.display = "block";
+  cartList.innerHTML = "";
+  cartItems.forEach(function (cartElement) {
+    cartList.innerHTML += `
+    <div class="cart-item">
+      <h4>${cartElement.name}</h4>
+      <div class="cart-card">
+        <div style="background-image: url(${cartElement.imgSrc})" class="cart-image"></div>
+        <div class="cart-price">${cartElement.price}</div>
+      </div>
+    </div>
+    `
+  })
+}
