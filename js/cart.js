@@ -7,7 +7,8 @@ const cartList = document.querySelector(".cart-list");
 const cartTotal = document.querySelector(".total");
 
 let total = 0;
-cartItems.forEach(function(cartElement){
+cartItems.forEach(function (cartElement) {
+  total += cartElement.price;
   cartList.innerHTML += `
   <div class="cart-item">
     <h4>${cartElement.name}</h4>
@@ -18,3 +19,4 @@ cartItems.forEach(function(cartElement){
   </div>
   `
 });
+cartTotal.innerHTML = `Total: ${total}`;
