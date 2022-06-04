@@ -474,6 +474,12 @@ button {
 
 /* CHECKOUT PAGE
 -----------------------------------------------------------*/
+.cart-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
 .cart {
   border: 1px solid var(--clr-grey);
   min-width: 300px;
@@ -501,10 +507,19 @@ button {
   width: 60px;
   height: 60px;
   border-radius: 10px;
-  border: 2px solid white;
+  border: 2px solid grey;
   background-size: cover;
 }
-.cart-item, 
+.cart-list {
+  margin-top: 2rem;
+  min-width: 40vw;
+}
+.cart-item {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .cart-card {
   display: flex;
   justify-content: space-between;
