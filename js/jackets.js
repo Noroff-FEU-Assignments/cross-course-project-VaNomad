@@ -1,15 +1,19 @@
-
-import { productsArray } from "./productList.js";
+import getCart, { saveCart } from "./utils/storage.js";
+import { renderCartCount } from "./components/menu/menu.js";
+import { productsArray } from "./constants/productList.js";
 const productBox = document.querySelector(".products");
-let cartArray = [];
+
+renderCartCount();
 
 productsArray.forEach(function (product) {
-  productBox.innerHTML += `
-    <div div class = "item" >
+	console.log(product);
+
+	productBox.innerHTML += `
+    <div class="item">
       <div class="box">
         <div class="flex-row">
           <button class="cart-icon">
-            <i class="fa fa-shopping-bag" data-product="${product.id}"></i>
+            <i class="fa fa-shopping-bag" data-id="${product.id}" data-name="${product.name}"></i>
           </button>
           <div class="flex-row">
             <h3>${product.name}</h3>
@@ -42,21 +46,25 @@ productsArray.forEach(function (product) {
           </div>
         </div>
       </div>
-    </div>`
+    </div>`;
 });
 
 const cartButton = document.querySelectorAll("i");
-cartButton.forEach(function (i) {
-  i.onclick = function (event) {
-    cartArray.push(event.target.dataset.product);
-    const itemToAdd = productsArray.find(item => item.id === event.target.parentElement.dataset.product);
-    console.log(itemToAdd);
-    
-    
-  }
+
+cartButton.forEach(function (cartButton) {
+	cartButton.onclick = function (event) {
+		const cartArray = getCart();
+
+		const id = event.target.dataset.id;
+		const name = event.target.dataset.name;
+
+		const product = { id: id, name: name };
+
+		cartArray.push(product);
+		saveCart(cartArray);
+		renderCartCount();
+	};
 });
-
-
 
 /* <div class="box">
 //             <div class="img-box">
@@ -87,8 +95,3 @@ cartButton.forEach(function (i) {
 //               </div>
 //             </div>
 //           </div> */
-
-
-
-
-
