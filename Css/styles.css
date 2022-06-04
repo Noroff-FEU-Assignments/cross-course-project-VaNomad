@@ -821,8 +821,8 @@ button {
 @media(min-width: 769px) {
   nav .list-box .nav-menu {
     display: flex;
-    width: 50%;
-    justify-content: space-around;
+    width: 55%;
+    justify-content: space-between;
     align-items: center;
   }
 
