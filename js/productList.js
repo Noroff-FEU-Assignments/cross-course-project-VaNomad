@@ -1,65 +1,65 @@
 export const productsArray = [
   {
+    id: 0,
     name: "Calderon",
-    id: "0",
     price: 2599,
     description: "This jacket has amazing shell properties",
-    imgSrc: "/images/photos/blake-lisk-swdM6_NFnCs-unsplash.jpg"
+    imgSrc: "/images/photos/blake-lisk-swdM6_NFnCs-unsplash.jpg",
   },
   {
+    id: 1,
     name: "Begsby",
-    id: "1",
     price: 2599,
     description: "This jacket has amazing shell properties",
-    imgSrc: "/images/photos/john-vicente-KoPST4OEEQA-unsplash.jpg"
+    imgSrc: "/images/photos/john-vicente-KoPST4OEEQA-unsplash.jpg",
   },
   {
+    id: 2,
     name: "Aeiron",
-    id: "2",
     price: 2599,
     description: "This jacket has amazing shell properties",
-    imgSrc: "/images/photos/janko-ferlic-_A1V4vuyXWM-unsplash.jpg"
+    imgSrc: "/images/photos/janko-ferlic-_A1V4vuyXWM-unsplash.jpg",
   },
   {
+    id: 3,
     name: "Vandela",
-    id: "3",
     price: 2599,
     description: "This jacket has amazing shell properties",
-    imgSrc: "/images/photos/kal-visuals-6TIoPIpMvLc-unsplash.jpg"
+    imgSrc: "/images/photos/kal-visuals-6TIoPIpMvLc-unsplash.jpg",
   },
   {
+    id: 4,
     name: "Gedola",
-    id: "4",
     price: 2599,
     description: "This jacket has amazing shell properties",
-    imgSrc: "/images/photos/daniel-lincoln-kTChmgdTkwE-unsplash.jpg"
+    imgSrc: "/images/photos/daniel-lincoln-kTChmgdTkwE-unsplash.jpg",
   },
   {
+    id: 5,
     name: "Edilaso",
-    id: "5",
     price: 2599,
     description: "This jacket has amazing shell properties",
-    imgSrc: "/images/photos/dmitry-kara-YVkUmYAIJ5Y-unsplash.jpg"
+    imgSrc: "/images/photos/dmitry-kara-YVkUmYAIJ5Y-unsplash.jpg",
   },
   {
+    id: 6,
     name: "Selinium",
-    id: "6",
     price: 2599,
     description: "This jacket has amazing shell properties",
-    imgSrc: "/images/photos/durmus-kavcioglu-QPXIVXpW-JU-unsplash.jpg"
+    imgSrc: "/images/photos/durmus-kavcioglu-QPXIVXpW-JU-unsplash.jpg",
   },
   {
+    id: 7,
     name: "Dizela",
-    id: "7",
     price: 2599,
     description: "This jacket has amazing shell properties",
-    imgSrc: "/images/photos/erik-brolin-2_cIV9J4NT8-unsplash.jpg"
+    imgSrc: "/images/photos/erik-brolin-2_cIV9J4NT8-unsplash.jpg",
   },
   {
+    id: 8,
     name: "Artemis",
-    id: "8",
     price: 2599,
     description: "This jacket has amazing shell properties",
-    imgSrc: "/images/photos/fil-mazzarino-7IimdEvrXH4-unsplash.jpg"
+    imgSrc: "/images/photos/fil-mazzarino-7IimdEvrXH4-unsplash.jpg",
   }
 ];

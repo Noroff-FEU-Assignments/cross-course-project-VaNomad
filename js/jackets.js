@@ -12,7 +12,7 @@ productsArray.forEach(function (product) {
   <div class="item">
           <div class="box">
             <div class="flex-row">
-              <button class="cart-icon" data-product="${product.name}">
+              <button class="cart-icon" data-product="${product.id}">
                 <i class="fa fa-shopping-bag"></i>
               </button>
               <div class="flex-row">
