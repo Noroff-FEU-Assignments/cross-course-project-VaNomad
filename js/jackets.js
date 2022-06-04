@@ -1,10 +1,7 @@
-// —————————‡————————— Imports
+
 import { productsArray } from "./productList.js";
-
-// —————————‡————————— Element Selections
 const productBox = document.querySelector(".products");
-
-// —————————‡————————— Element renders
+let cartArray = [];
 
 productsArray.forEach(function (product) {
   productBox.innerHTML += `
@@ -48,24 +45,12 @@ productsArray.forEach(function (product) {
     </div>`
 });
 
-// Cart Array
-let cartArray = [];
-
-// AddToCart
-// function addToCart(id) {
-//   console.log(id);
-//   const item = products.find( (product) => product.id === id)
-//   console.log(item);
-  
-// }
-
-
-
 const cartButton = document.querySelectorAll("i");
 cartButton.forEach(function (i) {
   i.onclick = function (event) {
     cartArray.push(event.target.dataset.product);
     console.log(cartArray);
+    
     
   }
 });
