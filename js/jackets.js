@@ -4,6 +4,8 @@ import { productsArray } from "./constants/productList.js";
 const productBox = document.querySelector(".products");
 const floatingCart = document.querySelector(".cart");
 const cartList = document.querySelector(".cart-list");
+const cartTotal = document.querySelector(".total");
+
 
 
 
@@ -75,7 +77,9 @@ cartButton.forEach(function (cartButton) {
 function showCart(cartItems) {
   floatingCart.style.display = "block";
   cartList.innerHTML = "";
+  let total = 0;
   cartItems.forEach(function (cartElement) {
+    total += cartElement.price;
     cartList.innerHTML += `
     <div class="cart-item">
       <h4>${cartElement.name}</h4>
@@ -86,4 +90,5 @@ function showCart(cartItems) {
     </div>
     `
   })
+  cartTotal.innerHTML = `Total: ${total}`
 }

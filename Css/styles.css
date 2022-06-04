@@ -491,9 +491,10 @@ button {
 }
 .cart a {
   text-decoration: none;
-  border: 1px solid var(--clr-grey);
+  color: var(--clr-white);
   background-color: var(--clr-green);
-  padding: 2px;
+  margin-top: 1rem;
+  padding: .2rem;
   text-align: center;
 }
 .cart-image {
