@@ -49,7 +49,7 @@ productsArray.forEach(function (product) {
 });
 
 // Cart Array
-// let cart = [];
+let cartArray = [];
 
 // AddToCart
 // function addToCart(id) {
@@ -64,7 +64,8 @@ productsArray.forEach(function (product) {
 const cartButton = document.querySelectorAll("i");
 cartButton.forEach(function (i) {
   i.onclick = function (event) {
-    console.log(event.target.dataset.product);
+    cartArray.push(event.target.dataset.product);
+    console.log(cartArray);
     
   }
 });
