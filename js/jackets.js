@@ -49,7 +49,8 @@ const cartButton = document.querySelectorAll("i");
 cartButton.forEach(function (i) {
   i.onclick = function (event) {
     cartArray.push(event.target.dataset.product);
-    console.log(cartArray);
+    const itemToAdd = productsArray.find(item => item.id === event.target.parentElement.dataset.product);
+    console.log(itemToAdd);
     
     
   }
