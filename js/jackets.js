@@ -11,8 +11,8 @@ productsArray.forEach(function (product) {
     <div div class = "item" >
       <div class="box">
         <div class="flex-row">
-          <button class="cart-icon" onclick="addToCart(${product.id})">
-            <i class="fa fa-shopping-bag"></i>
+          <button class="cart-icon">
+            <i class="fa fa-shopping-bag" data-product="${product.id}"></i>
           </button>
           <div class="flex-row">
             <h3>${product.name}</h3>
@@ -48,10 +48,22 @@ productsArray.forEach(function (product) {
     </div>`
 });
 
+// Cart Array
+// let cart = [];
 
-const cartButton = document.querySelectorAll("button");
-cartButton.forEach(function (button) {
-  button.onclick = function (event) {
+// AddToCart
+// function addToCart(id) {
+//   console.log(id);
+//   const item = products.find( (product) => product.id === id)
+//   console.log(item);
+  
+// }
+
+
+
+const cartButton = document.querySelectorAll("i");
+cartButton.forEach(function (i) {
+  i.onclick = function (event) {
     console.log(event.target.dataset.product);
     
   }
