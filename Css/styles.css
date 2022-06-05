@@ -290,7 +290,7 @@ button {
 .cart-icon {
   font-size: 2rem;
   margin-left: 1.8rem;
-  z-index: 1000;
+  z-index: 60;
   position: relative;
   color: var(--clr-blue);
   transition: 0.4s;
@@ -953,6 +953,10 @@ form {
 
   .form {
     grid-template-columns: 1fr;
+  }
+  .body-contact,
+  .body-about {
+    overflow-y: scroll;
   }
 }
 
