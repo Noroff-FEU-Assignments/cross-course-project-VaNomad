@@ -8,9 +8,12 @@ const email = document.querySelector("#email");
 const emailErr = document.querySelector("#emailErr");
 const address = document.querySelector("#address");
 const addressErr = document.querySelector("#addressErr");
-const header = document.querySelector(".main-head");
+const header = document.querySelector(".form-title");
 const resetForm = document.querySelector(".reset");
 const errorDisplay = document.querySelector(".formError");
+const button = document.querySelector(".btn");
+
+
 
 
 
@@ -46,13 +49,13 @@ function formVisa(event) {
     addressErr.style.display = "none";
   } else {
     errorDisplay.innerHTML = `
-    <h4>Enter at least 20 characters</h4>
+    <h4>Enter a valid address</h4>
     `;
   }
   
-  if (checkRange(fullName.value, 1) && checkRange(subject.value, 9) && emailVisa(email.value) && checkRange(address.value, 24)) {
-    header.innerHTML = `<h1 style="color: var(--clr-yellow); font-size: 4rem;">Your message has been sent!</h1>`; 
-  form.reset();
+  if (checkRange(fullName.value, 1) && phoneVisa(subject.value) && emailVisa(email.value) && checkRange(address.value, 20)) {
+    header.innerHTML = `<h2 style="color: var(--clr-white); font-size: 1rem;">Your message has been sent!</h2>`; 
+    form.reset();
   }
 }
 form.addEventListener("submit", formVisa);
