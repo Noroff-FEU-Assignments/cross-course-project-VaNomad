@@ -1,11 +1,3 @@
-// const inputs = document.querySelectorAll(".input");
-
-// inputs.forEach(function (input) {
-//   input.addEventListener
-// })
-
-
-
 // ————————‡————————  HTML Targets  ————————‡————————
 const form = document.querySelector("#contact-form");
 const fullName = document.querySelector("#fullName");

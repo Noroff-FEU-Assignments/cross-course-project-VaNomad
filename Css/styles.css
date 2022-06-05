@@ -796,7 +796,10 @@ form {
   border-radius: 20px;
   transition: 0.2s;
 }
-.input-container label {
+.input::placeholder {
+  color: var(--clr-white);
+}
+/* .input-container label {
   position: absolute;
   top: 50%;
   left: .5rem;
@@ -812,22 +815,50 @@ form {
   left: 1.5rem;
   transform: translateY(-50%);
   font-size: .6rem;
-  padding: .5rem;
+  padding: 1.8rem;
   color: transparent;
-  background-color: red;
   z-index: 500;
   pointer-events: none;
 }
-.textarea .input {
+.input-container span:before,
+.input-container span:after {
+  content: "";
+  position: absolute;
+  width: 10%;
+  opacity: 0;
+  transition: 0.4s;
+  height: 1rem;
+  background-color: var(--clr-green);
+  top: 50%;
+  transform: translateY(-50%);
+}
+.input-container span:before {
+  left: 50%;
+}
+.input-container span:after {
+  right: 50%;
+}
+.input-container.focus label{
+  top: 0;
+  left: 1.5rem;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+.input-container.focus span:before,
+.input-container.focus span:after {
+  width: 50%;
+  opacity: 1;
+} */
+.textarea.input {
   padding: .5rem;
   min-height: 100px;
   overflow-y: auto;
   resize: none;
 }
-.textarea label {
+/* .textarea label {
   top: .8rem;
   transform: translateY(0);
-}
+} */
 .btn {
   padding: .5rem 1rem;
   color: var(--clr-black);
