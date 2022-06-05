@@ -253,7 +253,9 @@ nav .list-box .hamburger:hover .strip:nth-child(3) {
 }
 
 .title-text {
-  color: var(--clr-text)
+  color: var(--clr-text);
+  max-width: 70vw;
+  margin: auto;
 }
 
 .content {
