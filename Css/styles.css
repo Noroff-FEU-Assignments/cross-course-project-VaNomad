@@ -746,12 +746,15 @@ button {
 —————————————————————————‡——————————————————————— CONTACT PAGE */
 .container {
   position: relative;
+  background-image: url(/images/photos/vatra-voda-V3NKSTekcC4-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   min-height: 100vh;
   padding: 2rem;
-  background-color: var(--clr-lightblue);
+  background-color: var(--clr-black);
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 
 }
@@ -760,13 +763,13 @@ button {
   max-width: 800px;
   background-color: var(--clr-white);
   border-radius: 10px;
-  box-shadow: 0 0 .8rem -.5rem var(--clr-black);
+  box-shadow: 0 0 .8rem -.4rem var(--clr-black);
   overflow: hidden;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 .contact-info {
-  background-color: var(--clr-blue);
+  background-color: var(--clr-white);
 }
 .contact-form {
   background-color: var(--clr-green);
