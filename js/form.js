@@ -22,7 +22,7 @@ function formVisa(event) {
     fullNameErr.style.display = "block";
   }
 
-  if (checkRange(subject.value, 9)) {
+  if (phoneVisa(subject.value)) {
     subjectErr.style.display = "none";
   } else {
     subjectErr.style.display = "block";
@@ -75,5 +75,11 @@ function checkRange(value, range) {
 function emailVisa(email) {
   const regEx = /\S+@\S+\.\S+/;
   const typeFit = regEx.test(email);
+  return typeFit;
+}
+
+function phoneVisa(subject) {
+  const regEx = /^\d+$/;
+  const typeFit = regEx.test(subject);
   return typeFit;
 }
