@@ -45,7 +45,8 @@ p {
   margin: auto;
 }
 .body-home,
-.body-contact {
+.body-contact,
+.body-about {
   height: 100vh;
   overflow: hidden;
 }
@@ -867,6 +868,10 @@ form {
 .social-contact a {
   color: var(--clr-black);
   padding: 0 1rem;
+}
+.about-container {
+  background-image: url(/images/photos/tim-jones-NQjvaCYp0h4-unsplash.jpg);
+  justify-content: center;
 }
 /* MEDIA QUERIES 
 -----------------------------------------------------------*/
