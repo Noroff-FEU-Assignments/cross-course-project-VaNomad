@@ -777,7 +777,7 @@ button {
 }
 form {
   padding: 2rem;
-  z-index: 100;
+  z-index: 50;
   position: relative;
 }
 .form-title {
