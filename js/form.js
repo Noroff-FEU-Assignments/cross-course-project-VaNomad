@@ -10,6 +10,8 @@ const address = document.querySelector("#address");
 const addressErr = document.querySelector("#addressErr");
 const header = document.querySelector(".main-head");
 const resetForm = document.querySelector(".reset");
+const errorDisplay = document.querySelector(".formError");
+
 
 
 // ————————‡————————  FORM Validation  ————————‡————————
@@ -19,25 +21,33 @@ function formVisa(event) {
   if (checkRange(fullName.value, 1)) {
     fullNameErr.style.display = "none";
   } else {
-    fullNameErr.style.display = "block";
+    errorDisplay.innerHTML = `
+    <h4>Your name is required</h4>
+    `;
   }
 
   if (phoneVisa(subject.value)) {
     subjectErr.style.display = "none";
   } else {
-    subjectErr.style.display = "block";
+    errorDisplay.innerHTML = `
+    <h4>Enter a valid phone number</h4>
+    `;
   }
 
   if (emailVisa(email.value)) {
     emailErr.style.display = "none";
   } else {
-    emailErr.style.display = "block";
+    errorDisplay.innerHTML = `
+    <h4>Enter a valid E-mail</h4>
+    `;
   }
 
-  if (checkRange(address.value, 24)) {
+  if (checkRange(address.value, 20)) {
     addressErr.style.display = "none";
   } else {
-    addressErr.style.display = "block";
+    errorDisplay.innerHTML = `
+    <h4>Enter at least 20 characters</h4>
+    `;
   }
   
   if (checkRange(fullName.value, 1) && checkRange(subject.value, 9) && emailVisa(email.value) && checkRange(address.value, 24)) {

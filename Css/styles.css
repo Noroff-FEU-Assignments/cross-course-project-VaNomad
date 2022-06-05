@@ -761,7 +761,6 @@ button {
   background-color: var(--clr-white);
   border-radius: 10px;
   box-shadow: 0 0 .8rem -.5rem var(--clr-black);
-  z-index: 1000;
   overflow: hidden;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -798,6 +797,17 @@ form {
 }
 .input::placeholder {
   color: var(--clr-white);
+}
+.form-error {
+  display: none;
+  transition: 0.3s;
+}
+.red {
+  color: var(--clr-red);
+  padding: .3rem 1rem;
+  margin-top: 1rem;
+  transition: 0.3s;
+  letter-spacing: 2px;
 }
 /* .input-container label {
   position: absolute;
