@@ -945,6 +945,10 @@ form {
     flex-wrap: wrap;
     height: 90vh;
   }
+
+  .form {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media(min-width: 769px) {
