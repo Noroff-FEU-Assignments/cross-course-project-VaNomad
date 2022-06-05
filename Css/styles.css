@@ -806,6 +806,18 @@ form {
   font-size: 1.2rem;
   pointer-events: none;
 }
+.input-container span {
+  position: absolute;
+  top: 0;
+  left: 1.5rem;
+  transform: translateY(-50%);
+  font-size: .6rem;
+  padding: .5rem;
+  color: transparent;
+  background-color: red;
+  z-index: 500;
+  pointer-events: none;
+}
 .textarea .input {
   padding: .5rem;
   min-height: 100px;
