@@ -1,7 +1,5 @@
 // —————————‡————————— Imports
-import {
-  productsArray
-} from "./productList.js";
+import { productsArray } from "./constants/productList.js";
 
 // —————————‡————————— Element Selections
 const jacketBox = document.querySelector(".container");
