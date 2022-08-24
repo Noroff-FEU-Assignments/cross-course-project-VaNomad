@@ -42,4 +42,3 @@ productsArray.forEach(function (jackets) {
    `
 
 });
-jackets();
