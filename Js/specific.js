@@ -1,4 +1,4 @@
-// // —————————‡————————— Imports
+// —————————‡————————— Imports
 // import { productsArray } from "./constants/productList.js";
 
 // —————————‡————————— URL Endpoint
