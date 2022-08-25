@@ -7,12 +7,12 @@ const url = "https://rainydays.sjur.io/wp-json/wc/v3/products?consumer_key=ck_86
 
 // —————————‡————————— Functions
 async function getProducts() {
-  
+
   const response = await fetch(url);
 
-  const results = response.json();
+  const results = await response.json();
 
-  console.log(results);
+  console.log(results.all);
 }
 getProducts();
 // // —————————‡————————— Element Selections
