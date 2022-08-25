@@ -18,6 +18,7 @@ getProducts();
 
 // // —————————‡————————— Element Selections
 productsArray.forEach(function (jackets) {
+  console.log(jackets);
   jacketBox.innerHTML =
 `
    <div class="box">
