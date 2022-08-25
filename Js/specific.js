@@ -17,8 +17,8 @@ getProducts();
 // const jacketBox = document.querySelector(".container");
 
 // // —————————‡————————— Element Selections
-// productsArray.forEach(function (jackets) {
-//   jacketBox.innerHTML =
+productsArray.forEach(function (jackets) {
+  jacketBox.innerHTML =
 `
    <div class="box">
              <div class="img-box">
