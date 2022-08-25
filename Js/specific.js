@@ -1,13 +1,25 @@
-// —————————‡————————— Imports
-import { productsArray } from "./constants/productList.js";
+// // —————————‡————————— Imports
+// import { productsArray } from "./constants/productList.js";
 
-// —————————‡————————— Element Selections
-const jacketBox = document.querySelector(".container");
+// —————————‡————————— URL Endpoint
+const url = "https://rainydays.sjur.io/wp-json/wc/v3/products?consumer_key=ck_860965e394b6a0175412be6785610116914579cb&consumer_secret=cs_f6787c7046e3067c193fb6d7cac1aea67e148816"
 
-// —————————‡————————— Element Selections
-productsArray.forEach(function (jackets) {
-  jacketBox.innerHTML =
-    `
+
+// —————————‡————————— Functions
+async function getProducts() {
+  //fetch
+
+  console.log(fetch);
+
+}
+getProducts();
+// // —————————‡————————— Element Selections
+// const jacketBox = document.querySelector(".container");
+
+// // —————————‡————————— Element Selections
+// productsArray.forEach(function (jackets) {
+//   jacketBox.innerHTML =
+`
    <div class="box">
              <div class="img-box">
                <img src="${jackets.imgSrc}" alt="${jackets.description}">

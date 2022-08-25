@@ -398,7 +398,7 @@ button {
   justify-content: space-around;
 }
 
-.product {
+.product .specific {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -476,6 +476,12 @@ button {
 
 .product .container .box .options-box .colours-box .three {
   background-color: var(--clr-green);
+}
+
+/* PRODUCT SPECIFIC PAGE
+-----------------------------------------------------------*/
+.specific {
+
 }
 
 /* CHECKOUT PAGE
