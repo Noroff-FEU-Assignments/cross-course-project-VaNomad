@@ -10,7 +10,9 @@ async function getProducts() {
   
   const response = await fetch(url);
 
-  console.log(response);
+  const results = response.json();
+
+  console.log(results);
 }
 getProducts();
 // // —————————‡————————— Element Selections
