@@ -482,14 +482,18 @@ button {
 -----------------------------------------------------------*/
 .productName {
  text-decoration: none;
- font-size: 2rem;
+ font-size: 1.1rem;
  text-transform: uppercase;
  letter-spacing: 1rem;
  color: var(--clr-black);
+ padding-top: 1.2rem;
 }
 
-.productImg {
-  height
+.productImg img {
+  height: 20rem;
+  width: 20rem;
+  background-size: cover;
+  object-fit: cover;
 }
 
 /* CHECKOUT PAGE
