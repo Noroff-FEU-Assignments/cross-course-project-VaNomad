@@ -14,7 +14,7 @@ async function getProducts() {
     createHTML(results);
   } catch (error) {
     console.log("error occurred", error);
-    result.innerHTML = "An error occurred "
+    result.innerHTML = "An error occurred calling the API! "
   }
 }
 getProducts();
@@ -34,26 +34,3 @@ function createHTML(jackets) {
     `
   });
 }
-
-// function createHTML(jackets) {
-//   jackets.forEach(function (products) {
-//     jacketContainer.innerHTML +=
-//       `
-//       <a href="specific.html?id=${product.id}"></a>
-//       <div class="title">
-// 				<h1 class="title-text">choose the one jacket you can trust</h1>
-// 			</div>
-// 			<div class="content products">
-// 			</div>
-// 			<div class="cart">
-// 				<div class="cart-list"></div>
-// 				<div class="total">
-// 					<h4>Total:</h4>
-// 				</div>
-// 				<a href="cart.html">
-// 					<p>Checkout</p>
-// 				</a>
-// 			</div>
-//       `
-//   })
-// }
