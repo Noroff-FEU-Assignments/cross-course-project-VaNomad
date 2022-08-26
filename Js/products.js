@@ -12,7 +12,7 @@ async function getProducts() {
     const response = await fetch(url);
     const results = await response.json();
     createHTML(results);
-  } catch(error) {
+  } catch (error) {
     console.log("error occurred", error);
     result.innerHTML = "An error occurred "
   }
@@ -26,7 +26,7 @@ function createHTML(jackets) {
         <h4>${product.name}</h4>
       </a>
       <a href="${product.id}">
-        <h4>${product.images}</h4>
+        <img src="${product.images[0].src}" alt="${product.name}">
       </a>
 
     `
