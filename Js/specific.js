@@ -5,23 +5,6 @@ const url = "https://rainydays.sjur.io/wp-json/wc/v3/products?consumer_key=ck_86
 const detailsContainer = document.querySelector(".details");
 const result = document.querySelector(".result");
 
-// —————————‡————————— Arrow Promise Syntax
-fetch(url)
-  .then(response => response.json())
-  .then(results => createHTML(results))
-  .catch(error => detailsContainer.innerHTML = ("An error occured when calling the API!"));
-
-function createHTML(results) {
-  const details = results;
-  detailsContainer.innerHTML = `
-  <a class="productName" href="${product.id}">
-          <h4>${product.name}</h4>
-        </a>
-        <a class="productImg" href="${product.id}">
-          <img src="${product.images[0].src}" alt="${product.name}">
-        </a>
-  `;
-}
 // —————————‡————————— Async Function
 async function getProducts() {
   try {
@@ -39,31 +22,12 @@ function createHTML(details) {
   details.forEach(function (product) {
 detailsContainer.innerHTML = `
       
-        <a class="productName" href="${product.id}">
+        <div>
           <h4>${product.name}</h4>
-        </a>
-        <a class="productImg" href="${product.id}">
           <img src="${product.images[0].src}" alt="${product.name}">
-        </a>
+        </div>
       
 
     `
   });
 }
-
-// —————————‡————————— Connor Example
-async function callApi() {
-  const response = await fetch(url);
-  const json = await response.json();
-
-  console.log(json);
-
-  const results = json;
-
-  results.forEach(function (results) {
-    detailsContainer.innerHTML += `<div>${products._id}</div>`;
-  });
-  
-}
-
-callApi();

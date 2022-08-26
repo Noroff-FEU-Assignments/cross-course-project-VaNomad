@@ -26,7 +26,7 @@ function createHTML(jackets) {
         <a class="productName" href="${product.id}">
           <h4>${product.name}</h4>
         </a>
-        <a class="productImg" href="${product.id}">
+        <a class="img-box" href="${product.id}">
           <img src="${product.images[0].src}" alt="${product.name}">
         </a>
       
