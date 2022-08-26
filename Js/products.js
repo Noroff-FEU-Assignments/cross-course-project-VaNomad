@@ -22,12 +22,14 @@ getProducts();
 function createHTML(jackets) {
   jackets.forEach(function (product) {
     jacketContainer.innerHTML += `
-      <a href="${product.id}">
-        <h4>${product.name}</h4>
-      </a>
-      <a href="${product.id}">
-        <img src="${product.images[0].src}" alt="${product.name}">
-      </a>
+      
+        <a class="productName" href="${product.id}">
+          <h4>${product.name}</h4>
+        </a>
+        <a class="productImg" href="${product.id}">
+          <img src="${product.images[0].src}" alt="${product.name}">
+        </a>
+      
 
     `
   });

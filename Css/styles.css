@@ -480,8 +480,16 @@ button {
 
 /* PRODUCT SPECIFIC PAGE
 -----------------------------------------------------------*/
-.specific {
+.productName {
+ text-decoration: none;
+ font-size: 2rem;
+ text-transform: uppercase;
+ letter-spacing: 1rem;
+ color: var(--clr-black);
+}
 
+.productImg {
+  height
 }
 
 /* CHECKOUT PAGE
