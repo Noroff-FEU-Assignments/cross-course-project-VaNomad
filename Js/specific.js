@@ -26,6 +26,21 @@ async function getJacket() {
     createHTML(data);
     
   }
+  catch (error) {
+    console.log(error);
+    detailsContainer.innerHTML = message("The API call failed", error);
+  }
+
+}
+
+getJacket();
+
+function createHTML(data) {
+  detailsContainer.innerHTML =
+    `<h1>${product.name}</h1>
+     <div class="detailsImg" ${product.images}</div>
+     <div class="detailsDiscription" ${product.discription}</div>
+    `
 }
 
 // // —————————‡————————— URL Endpoint
