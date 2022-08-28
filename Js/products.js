@@ -12,7 +12,7 @@ async function getProducts() {
     results.forEach(function (product) {
       jacketContainer.innerHTML += `
           
-            <a href="${product.id}">
+            <a href="specific.html?id${product.id}">
               <h4 class="productName">${product.name}</h4>
               <div class="productImg" >
               <img src="${product.images[0].src}" alt="${product.name}">
