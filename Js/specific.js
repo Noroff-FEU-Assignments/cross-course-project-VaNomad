@@ -4,7 +4,7 @@ const detailsContainer = document.querySelector(".details");
 
 const querySelector = document.location.search;
 
-const params = new URLSearchParams(querySelector);
+const params = new URLSearchParams(querystring);
 
 const id = params.get("id");
 
@@ -12,7 +12,7 @@ if (!id) {
   location.href = "jackets.html"
 }
 
-const url = "https://rainydays.sjur.io/wp-json/wc/v3/products" + id + "?consumer_key=ck_860965e394b6a0175412be6785610116914579cb&consumer_secret=cs_f6787c7046e3067c193fb6d7cac1aea67e148816";
+const url = "https://rainydays.sjur.io/wp-json/wc/v3/products/" + id + "?consumer_key=ck_860965e394b6a0175412be6785610116914579cb&consumer_secret=cs_f6787c7046e3067c193fb6d7cac1aea67e148816";
 
 console.log(url);
 
@@ -37,7 +37,7 @@ getJacket();
 function createHTML(data) {
   detailsContainer.innerHTML =
     `<h1>${products.name}</h1>
-     <div class="detailsImg" ${products.images}</div>
+     <div class="productImg" ${products.images}</div>
      <div class="detailsDiscription" ${products.discription}</div>
     `
 }
