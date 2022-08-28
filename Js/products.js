@@ -12,6 +12,7 @@ async function getProducts() {
     const response = await fetch(url);
     const results = await response.json();
     createHTML(results);
+
   } catch (error) {
     console.log("error occurred", error);
     result.innerHTML = "An error occurred calling the API! "
@@ -23,13 +24,12 @@ function createHTML(jackets) {
   jackets.forEach(function (product) {
     jacketContainer.innerHTML += `
       
-        <a class="productName" href="${product.id}">
-          <h4>${product.name}</h4>
-        </a>
-        <a class="img-box" href="${product.id}">
+        <a href="${product.id}">
+          <h4 class="productName">${product.name}</h4>
+          <div class="productImg" >
           <img src="${product.images[0].src}" alt="${product.name}">
+          </div>
         </a>
-      
 
     `
   });
