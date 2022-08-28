@@ -94,7 +94,6 @@ nav .list-box .nav-menu li a {
 
 nav .list-box .nav-menu li a:hover {
   color: var(--clr-red);
-  letter-spacing: 1px;
   font-weight: bold;
 }
 
