@@ -6,10 +6,12 @@ const productDiscription = document.querySelector(".productDescription");
 const detailsContainer = document.querySelector(".details");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
+console.log(params);
+
 const id = params.get("id");
 
-const url = "https://rainydays.sjur.io/wp-json/wc/store/products" + id;
-console.log(id);
+const url = "https://rainydays.sjur.io/wp-json/wc/store/products/" + id;
+console.log(url);
 
 async function getJacket() {
   try {
