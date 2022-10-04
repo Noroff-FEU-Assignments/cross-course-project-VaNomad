@@ -48,12 +48,12 @@ Install the dependencies:
     
     npm install
     
-
+.
 Contributing
 
 If you want to contribute to this project, 
 make sure to open a pull request so code can be reviewed.
-
+.
 
 Contact
 
@@ -64,5 +64,5 @@ You can find me here if you want to get in touch:
     <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
   </a>
 </div>
-
+Sjur
 
