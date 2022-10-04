@@ -37,23 +37,15 @@ products use API
 Getting Started
 Installing
 
-    Clone the repo:
+Clone the repo:
 
-
+    
     gh repo clone Noroff-FEU-Assignments/cross-course-project-VaNomad
     
 
-    Install the dependencies:
-    
-    
     npm install
+    
 
-
-    Install the dependencies:
-
-npm install
-
-npm run start
 
 
 Contributing
