@@ -43,10 +43,10 @@ Clone the repo:
     gh repo clone Noroff-FEU-Assignments/cross-course-project-VaNomad
     
 
-Clone the repo:
+Install the dependencies:
 
     
-    gh repo clone Noroff-FEU-Assignments/cross-course-project-VaNomad
+    npm install
     
 
 Contributing
