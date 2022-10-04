@@ -22,11 +22,11 @@ This project has spanned over stages at Noroff in the Front-end development cour
 
 The project aimed to overall have these end results:
 
-    To put into practice everything we have learned about HTML and CSS.
-    Build a properly functioning, responsive website
-    Have a contact page with validation
-    Have a cart functionality
-    WordPress REST API to manage the products.
+- To put into practice everything we have learned about HTML and CSS.
+- Build a properly functioning, responsive website
+- Have a contact page with validation
+- Have a cart functionality
+- WordPress REST API to manage the products.
 
 ### Built With
 
