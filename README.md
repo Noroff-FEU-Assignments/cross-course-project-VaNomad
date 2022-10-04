@@ -14,8 +14,8 @@ the Design1 course.
 
 This project has spanned over stages at Noroff in the Front-end development course;
 
-Design1
-Html & Css
+Design1,
+Html & Css,
 Javascript
 
 Description;
