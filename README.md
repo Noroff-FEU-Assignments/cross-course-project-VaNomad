@@ -57,6 +57,11 @@ make sure to open a pull request so code can be reviewed.
 Contact
 
 You can find me here if you want to get in touch:
-www.linkedin.com/in/sjurhassel
+
+<div id="badges" align="center">
+  <a href="https://www.linkedin.com/in/sjurhassel/">
+    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
+  </a>
+</div>
 
 
