@@ -4,7 +4,6 @@ A repository for building a website from our CA in Design1 at Noroff
 
 # cross-course-project-VaNomad
 
-image
 ![rainydays_screenshot](https://user-images.githubusercontent.com/77972892/193795971-a725cde2-1654-43f6-979a-d6c494b07dd3.jpg)
 
 The first attempt of building a responsive
