@@ -43,7 +43,11 @@ Clone the repo:
     gh repo clone Noroff-FEU-Assignments/cross-course-project-VaNomad
     
 
+Clone the repo:
 
+    
+    gh repo clone Noroff-FEU-Assignments/cross-course-project-VaNomad
+    
 
 Contributing
 
