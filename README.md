@@ -37,13 +37,8 @@ products use API
 Getting Started
 Installing
 
-   Installing
 
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
-
-    Clone the repo:
-
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
+    Clone the repo: gh repo clone Noroff-FEU-Assignments/cross-course-project-VaNomad
 
     Install the dependencies:
 
