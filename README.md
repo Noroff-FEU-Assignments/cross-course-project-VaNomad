@@ -1,6 +1,6 @@
 cross-course-project-VaNomad created by GitHub Classroom
 
-A repository for building a website from our CA in Design1
+A repository for building a website from our CA in Design1 at Noroff
 
 # cross-course-project-VaNomad
 
