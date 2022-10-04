@@ -49,12 +49,14 @@ Install the dependencies:
     npm install
     
 
-Contributing
+Contributing:
+
 If you want to contribute to this project, 
 make sure to open a pull request so code can be reviewed.
 
 
-Contact
+Contact:
+
 You can find me here if you want to get in touch:
 
 <div id="badges">
