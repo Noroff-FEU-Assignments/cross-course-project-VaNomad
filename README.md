@@ -40,7 +40,7 @@ Installing
 Clone the repo:
 
     
-    gh repo clone Noroff-FEU-Assignments/cross-course-project-VaNomad
+    https://github.com/Noroff-FEU-Assignments/cross-course-project-VaNomad.git
     
 
 Install the dependencies:
